@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+// import { Button } from "@/components/ui/button"
 
 const blogPosts = [
   {
@@ -44,9 +44,9 @@ export default function BlogSection() {
               />
               <div className="p-6">
                 <h3 className="font-bold text-xl mb-3 text-primary">{post.title}</h3>
-                <p className="text-card-foreground/80 mb-4">{post.excerpt}</p>
-                <Link href="/blog">
-                  <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Read More</Button>
+                <p className="text-primary mb-4">{post.excerpt}</p>
+                <Link className="font-semibold text-primary" href="/blog">
+              Read more
                 </Link>
               </div>
             </div>
@@ -55,12 +55,9 @@ export default function BlogSection() {
 
         <div className="mt-10 text-center">
           <Link href="/blog">
-            <Button
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            >
-              View All Posts
-            </Button>
+            <button className="px-4 py-3 bg-foreground rounded-full text-white">
+              View all posts 
+            </button>
           </Link>
         </div>
       </div>

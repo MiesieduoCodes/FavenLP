@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground transition-theme flex flex-col items-center">
       <div className="container mx-auto px-4 py-12 flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-8 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-8">
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">Faven LP</h3>
@@ -44,7 +44,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-primary-foreground/80 hover:text-primary-foreground">
+                <Link href="#contact" className="text-primary-foreground/80 hover:text-primary-foreground">
                   Contact Us
                 </Link>
               </li>
@@ -52,9 +52,9 @@ export default function Footer() {
           </div>
 
           {/* Follow Us */}
-          <div>
+          <div className="flex flex-col gap-4">
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-            <div className="flex justify-center space-x-4">
+            <div className="flex space-x-4">
               <Link href="#" className="text-primary-foreground hover:text-secondary">
                 <Facebook className="h-5 w-5" />
               </Link>

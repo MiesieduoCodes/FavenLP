@@ -13,6 +13,11 @@
   justify-content: center;
   padding-top: 10px; /* Adjust padding as needed */
 }
+
+.swiper-pagination-bullet-active{
+  background-color: #0C1A30 !important;
+}
+
 .lufga{
   font-family: 'Lufga', sans-serif;
                                                 
@@ -86,7 +91,7 @@
 }
 :root {
   --background: oklch(1 0 0);
-  --foreground: oklch(0.13 0.028 261.692);
+  --foreground: #152D53;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.13 0.028 261.692);
   --popover: oklch(1 0 0);
@@ -95,7 +100,7 @@
   --primary-foreground: oklch(0.985 0.002 247.839);
   --secondary: oklch(0.967 0.003 264.542);
   --secondary-foreground: oklch(0.21 0.034 264.665);
-  --muted: oklch(0.967 0.003 264.542);
+  --muted: #EFF3FB;
   --muted-foreground: oklch(0.551 0.027 264.364);
   --accent: oklch(0.967 0.003 264.542);
   --accent-foreground: oklch(0.21 0.034 264.665);

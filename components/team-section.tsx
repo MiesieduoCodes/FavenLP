@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image";
+import { useState } from "react";
 import { MoveUpRight } from "lucide-react";
 
 const teamMembers = [
@@ -29,30 +32,39 @@ const teamMembers = [
   }
 ];
 
+// Custom Image Component with Fallback
+function TeamImage({ src, alt }: { src: string; alt: string }) {
+  const [imgSrc, setImgSrc] = useState(src);
+
+  return (
+    <Image
+      src={imgSrc}
+      alt={alt}
+      width={300}
+      height={400}
+      className="w-full h-[350px] object-cover"
+      onError={() => setImgSrc("/images/placeholder-image.png")} // fallback path
+    />
+  );
+}
+
 export default function TeamSection() {
   return (
-    <section className="py-20 bg-muted transition-theme">
+    <section id="team" className="py-20 bg-muted transition-theme">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-primary text-center mb-12">Meet The Team</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
-            <div key={index} className="bg-card overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+            <div key={index} className="bg-card flex flex-col justify-between rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
               <div className="relative">
-                <Image
-                  src={member.image || "/placeholder.svg"}
-                  alt={member.name}
-                  width={300}
-                  height={400}
-                  className="w-full h-[350px] object-cover"
-                />
+                <TeamImage src={member.image} alt={member.name} />
               </div>
               <div className="flex items-center justify-between p-4" style={{ background: 'rgba(201, 191, 172, 1)' }}>
                 <div>
                   <h3 className="font-bold text-lg text-primary">{member.name}</h3>
                   <p className="text-blue-950 text-sm">{member.role}</p>
                 </div>
-                {/* Larger and more pronounced arrow */}
                 <div className="flex justify-center items-center">
                   <MoveUpRight 
                     className="bg-white text-blue-950 p-3 rounded-lg transition-all duration-300 hover:bg-secondary hover:scale-110"

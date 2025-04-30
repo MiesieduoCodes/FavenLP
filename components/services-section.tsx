@@ -25,11 +25,14 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-20 bg-background transition-theme">
+    <section className="py-26 relative bg-muted transition-theme">
+      <div className="absolute w-full  h-50 top-0 z-0 left-0">
+        <Image src={"/images/Patterns/bg-pattern.png"} height={100} width={100} className="flex h-full object-cover object-bottom w-full" alt={""}></Image>
+      </div>
       <div className="container mx-auto px-4">
         <div className="text-center lufga mb-4">
-          <h3 className="text-base text-foreground/70 mb-2">Our Practice Areas</h3>
-          <h2 className="text-3xl font-bold text-primary">What We Do</h2>
+          <h3 className="text-xl font-bold text-foreground/70 mb-2">Our Practice Areas</h3>
+          <h2 className="text-4xl  text-primary">What We Do</h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mt-12">
@@ -45,15 +48,23 @@ export default function ServicesSection() {
                 />
               </div>
               <h3 className="text-lg font-bold lufga text-primary mb-3">{service.title}</h3>
-              <p className="text-foreground/80 lufga text-sm flex-grow mb-4">{service.description}</p>
               <div>
-                <Link href="/services">
-                  <Button className="bg-primary hover:bg-primary/90 text-primary-foreground lufga rounded-full text-sm">Learn More</Button>
-                </Link>
+                <p className="text-foreground/80 lufga text-sm flex-grow mb-4">{service.description}</p>
+                <p className="text-[#1E4075]">
+                  See more
+                </p>
+              </div>
+              <div>
               </div>
             </div>
           ))}
         </div>
+
+      </div>
+      <div className="flex w-full  mt-10">
+        <Link className="mx-auto" href="/services">
+          <button className="bg-foreground hover:bg-foreground/90 text-primary-foreground py-3 px-6 lufga rounded-full text-sm">Read More</button>
+        </Link>
       </div>
     </section>
   )

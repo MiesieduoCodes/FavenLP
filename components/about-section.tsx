@@ -13,13 +13,19 @@ export default function AboutSection() {
   };
 
   return (
-    <section className="py-16 bg-muted transition-theme">
-      <div className="container lufga mx-auto px-4">
-        <h2 className="text-2xl font-bold mb-12 lufga text-blue-900 text-center">About Us</h2>
+    <section className="py-16 bg-muted relative z-100 transition-theme">
+      <div className="absolute w-full  h-60 top-0 z-0 left-0">
+        <Image src={"/images/Patterns/bg-pattern.png"} height={100} width={100} className="flex h-full object-cover object-bottom w-full" alt={""}></Image>
+      </div>
+      <div className="container relative z-10 lufga mx-auto px-4 py-10">
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="text-3xl font-bold lufga text-primary">Your case is in the right hands!</h3>
+            <div className="flex flex-col gap-8">
+              <h2 className="text-2xl font-bold lufga ">About Us</h2>
+
+              <h3 className="text-4xl  lufga text-primary">Your case is in the right hands!</h3>
+            </div>
             <p className="text-foreground/80">
               At Faven LP, we pursue the highest quality legal solutions for our clients. As a specialized law firm, we
               combine expert legal insights with innovative technology strategy to deliver results that elevate your
@@ -32,9 +38,8 @@ export default function AboutSection() {
 
             {/* Accordion Section */}
             <div
-              className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                isExpanded ? "max-h-[500px]" : "max-h-0"
-              }`}
+              className={`overflow-hidden transition-all duration-300 ease-in-out ${isExpanded ? "max-h-[500px]" : "max-h-0"
+                }`}
             >
               <p className="text-foreground/80">
                 We are dedicated to building constructive relationships founded on trust, genuine interest in
@@ -50,7 +55,7 @@ export default function AboutSection() {
               {/* Toggle link for "See More/See Less" */}
               <button
                 onClick={toggleText}
-                className="text-yellow-300 hover:text-blue-700 focus:outline-none"
+                className="text-primary hover:text-popover-foreground focus:outline-none"
               >
                 {isExpanded ? "See Less" : "See More"}
               </button>
@@ -66,11 +71,14 @@ export default function AboutSection() {
               className="w-full h-auto rounded-lg"
             />
           </div>
-          
-          <Link href="/about">
-                <Button className="lufga hover:bg-white hover:text-blue-950 bg-blue-900 text-white"> Contact Us</Button>
-              </Link>
+
         </div>
+      </div>
+      <div className="flex w-full ">
+
+        <Link className="mx-auto " href="/about">
+          <button className="lufga hover:bg-white rounded-full py-3 px-6  hover:text-blue-950 transition-all ease-in-out duration-200 bg-foreground text-white"> Contact Us</button>
+        </Link>
       </div>
     </section>
   );

@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
+import { useState } from "react";
 
 const testimonials = [
   {
@@ -44,6 +45,23 @@ const testimonials = [
     image: "/placeholder.svg?height=60&width=60",
   },
 ];
+
+// Custom Image Component with Fallback
+function TeamImage({ src, alt }: { src: string; alt: string }) {
+  const [imgSrc, setImgSrc] = useState(src);
+
+  return (
+    <Image
+      src={imgSrc}
+      alt={alt}
+      width={40}
+      height={40}
+      className="w-full h-full object-cover"
+      onError={() => setImgSrc("/images/placeholder-image.png")} // fallback path
+    />
+  );
+}
+
 
 export default function TestimonialsSection() {
   return (
@@ -120,15 +138,17 @@ export default function TestimonialsSection() {
                   <p className="text-lg text-gray-700 italic mb-6">
                     &quot;{testimonial.quote}&quot;
                   </p>
-                  <div className="flex items-center mt-auto">
+                  <div className="flex border-t-2 border-t-gray-400 pt-4 items-center mt-auto">
                     <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                      <Image
+                      {/* <Image
                         src={testimonial.image || "/placeholder.svg"}
                         alt={testimonial.author}
                         width={60}
                         height={60}
                         className="w-full h-full object-cover"
-                      />
+                      /> */}
+                      <TeamImage src={testimonial.image} alt={testimonial.author} />
+
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900">
