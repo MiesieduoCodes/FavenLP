@@ -6,9 +6,9 @@ import { MoveUpRight } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Ikionana Ezekiel",
-    role: "Managing Partner",
-    image: "/placeholder.svg?height=400&width=300",
+    name: "Prosper I. Akinlawon",
+    role: "Lead, Media & Publicity.",
+    image: "/images/teamMembers/team-member1.jpg",
   },
   {
     name: "Sandra Ebikeniye Best",
@@ -60,7 +60,7 @@ export default function TeamSection() {
               <div className="relative">
                 <TeamImage src={member.image} alt={member.name} />
               </div>
-              <div className="flex items-center justify-between p-4" style={{ background: 'rgba(201, 191, 172, 1)' }}>
+              <div className="flex flex-1 items-center justify-between p-4" style={{ background: 'rgba(201, 191, 172, 1)' }}>
                 <div>
                   <h3 className="font-bold text-lg text-primary">{member.name}</h3>
                   <p className="text-blue-950 text-sm">{member.role}</p>

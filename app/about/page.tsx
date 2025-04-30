@@ -51,7 +51,7 @@ export default function AboutPage() {
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/images/team.jpeg"
                 alt="Our team working together"
                 width={800}
                 height={600}
