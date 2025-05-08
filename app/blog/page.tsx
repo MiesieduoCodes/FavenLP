@@ -205,7 +205,7 @@ export default function BlogPage() {
                       </div>
 
                       <Link href={`/blog/${post.id}`}>
-                        <Button className="bg-primary hover:bg-primary/90 text-white">Read More</Button>
+                        <Button className="bg-primary hover:bg-white text-white">Read More</Button>
                       </Link>
                     </div>
                   </div>

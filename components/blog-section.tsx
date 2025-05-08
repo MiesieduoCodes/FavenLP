@@ -55,7 +55,7 @@ export default function BlogSection() {
 
         <div className="mt-10 text-center">
           <Link href="/blog">
-            <button className="px-4 py-3 bg-foreground rounded-full text-white">
+            <button className="px-4 py-3 hover:bg-white hover:border-primary border border-transparent hover:text-primary bg-foreground rounded-full text-white">
               View all posts 
             </button>
           </Link>

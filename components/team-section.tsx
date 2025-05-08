@@ -11,9 +11,9 @@ const teamMembers = [
     image: "/images/teamMembers/team-member1.jpg",
   },
   {
-    name: "Sandra Ebikeniye Best",
-    role: "Senior Partner",
-    image: "/placeholder.svg?height=400&width=300",
+    name: "ikionana Ezekiel",
+    role: "Managing Partner",
+    image: "/images/teamMembers/team-member2.jpg",
   },
   {
     name: "Dumebi Eriobunah",

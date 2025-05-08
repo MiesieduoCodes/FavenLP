@@ -63,7 +63,7 @@ export default function ServicesSection() {
       </div>
       <div className="flex w-full  mt-10">
         <Link className="mx-auto" href="/services">
-          <button className="bg-foreground hover:bg-foreground/90 text-primary-foreground py-3 px-6 lufga rounded-full text-sm">Read More</button>
+          <button className="bg-foreground  border border-transparent hover:border-primary hover:bg-white hover:text-primary text-primary-foreground py-3 px-6 lufga rounded-full text-sm">Read More</button>
         </Link>
       </div>
     </section>

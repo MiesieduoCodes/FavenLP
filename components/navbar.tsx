@@ -10,7 +10,7 @@ const navLinks = [
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Our Team", href: "/#team" },
-  { label: "Blog", href: "/blog" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
 ]
 
 export default function Navbar() {
@@ -45,7 +45,7 @@ export default function Navbar() {
             </div>
            
             <Link href={"/contact"}
-              className=" lufga hover:bg-white hover:text-blue-950 rounded-full py-2 px-4 w-fit  items-center justify-center flex bg-foreground transition-all ease-in-out duration-300 text-white font-medium"
+              className=" lufga hover:bg-white  hover:border hover:border-[#003668] border border-transparent hover:text-blue-950 rounded-full py-2 px-4 w-fit  items-center justify-center flex bg-foreground transition-all ease-in-out duration-300 text-white font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact Us
