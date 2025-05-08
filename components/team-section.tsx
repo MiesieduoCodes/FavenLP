@@ -23,7 +23,7 @@ const teamMembers = [
   {
     name: "Akonani J. Kosisochukwu",
     role: "Data Protection Intern",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/teamMembers/team-member3.jpg",
   },
   {
     name: "Hephzibah Olutona",
