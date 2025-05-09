@@ -15,21 +15,21 @@ const teamMembers = [
     role: "Managing Partner",
     image: "/images/teamMembers/team-member2.jpg",
   },
-  {
-    name: "Sandra Ebikeniye Best",
-    role: "Senior Partner",
-    image: "/images/teamMembers/team-member3.jpg",
-  },
+  // {
+  //   name: "Sandra Ebikeniye Best",
+  //   role: "Senior Partner",
+  //   image: "/images/teamMembers/team-member3.jpg",
+  // },
   {
     name: "Akonani J. Kosisochukwu",
     role: "Data Protection Intern",
-    image: "/images/teamMembers/team-member3.jpg",
+    image: "/images/teamMembers/team-member4.jpg",
   },
-  {
-    name: "Hephzibah Olutona",
-    role: "Data Protection Intern",
-    image: "/placeholder.svg?height=400&width=300",
-  }
+  // {
+  //   name: "Hephzibah Olutona",
+  //   role: "Data Protection Intern",
+  //   image: "/placeholder.svg?height=400&width=300",
+  // }
 ];
 
 // Custom Image Component with Fallback
