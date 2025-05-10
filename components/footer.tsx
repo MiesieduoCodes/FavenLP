@@ -55,16 +55,16 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <Link href="#" className="text-primary-foreground hover:text-secondary">
+              <Link href="https://www.facebook.com/profile.php?id=100088242764425" className="text-primary-foreground hover:text-secondary">
                 <Facebook className="h-5 w-5" />
               </Link>
               <Link href="#" className="text-primary-foreground hover:text-secondary">
                 <Twitter className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-primary-foreground hover:text-secondary">
+              <Link href="https://www.linkedin.com/company/favenlp/" className="text-primary-foreground hover:text-secondary">
                 <Linkedin className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-primary-foreground hover:text-secondary">
+              <Link href="https://www.instagram.com/favenlp?igsh=OG5jbDJ0aTd6NzN1" className="text-primary-foreground hover:text-secondary">
                 <Instagram className="h-5 w-5" />
               </Link>
             </div>

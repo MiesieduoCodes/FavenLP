@@ -5,6 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import Link from "next/link"
 // import { Button } from "@/components/ui/button"
 
 export default function ContactSection() {
@@ -31,6 +32,9 @@ export default function ContactSection() {
             <p className="text-lg text-gray-300">
               Feel free to contact us for any business, media, or personal inquiries:
             </p>
+            <p>we operate virtually and a means for them to reach us tied to 
+             <Link href={"mailto:ikionanaezekiel@gmail.com"} className="hover:text-blue-300"> ikionanaezekiel@gmail.com</Link>
+              </p>
 
             <div className="space-y-4">
               <div className="w-full max-md:flex-col gap-6 flex md:gap-20">
@@ -52,10 +56,9 @@ export default function ContactSection() {
               </div>
 
               <div className="flex w-full max-md:flex-col gap-6 md:gap-20">
-                <h3 className="text-2xl font-semibold">Contact</h3>
-                <div className="text-gray-300 space-y-1">
+                <h3 className="text-2xl font-semibold">Phone</h3>
+                <div className="text-gray-300 ">
                   <p>+2349068126885</p>
-                  <p>info@favenlp.com</p>
                 </div>
               </div>
             </div>
