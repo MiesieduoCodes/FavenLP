@@ -43,7 +43,7 @@ function TeamImage({ src, alt }: { src: string; alt: string }) {
       alt={alt}
       width={300}
       height={400}
-      className="w-full h-[350px] object-cover"
+      className="w-full h-full group-hover:scale-105 transition-all ease-in-out duration-300 object-cover"
       onError={() => setImgSrc("/images/placeholder-image.png")} // fallback path
     />
   );
@@ -57,22 +57,22 @@ export default function TeamSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <div key={index} className="bg-card flex flex-col justify-between rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-              <div className="relative">
+            <div key={index} className="bg-card group flex flex-col justify-between rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+              <div className="relative h-[350px] overflow-hidden">
                 <TeamImage src={member.image} alt={member.name} />
               </div>
-              <div className="flex flex-1 items-center justify-between p-4" style={{ background: 'rgba(201, 191, 172, 1)' }}>
+              <div className="flex flex-1 items-center justify-center text-center p-4" style={{ background: 'rgba(201, 191, 172, 1)' }}>
                 <div>
-                  <h3 className="font-bold text-lg text-primary">{member.name}</h3>
+                  <h3 className="font-bold group-hover:text-primary/50 transition-all ease-in-out duration-300 md:text-xl text-lg text-primary">{member.name}</h3>
                   <p className="text-blue-950 text-sm">{member.role}</p>
                 </div>
-                <div className="flex justify-center items-center">
+                {/* <div className="flex justify-center items-center">
                   <MoveUpRight
                     className="bg-white text-blue-950 p-3 rounded-lg transition-all duration-300 hover:bg-secondary hover:scale-110"
                     size={40}
                     strokeWidth={2.5}
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
