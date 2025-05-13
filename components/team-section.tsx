@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { MoveUpRight } from "lucide-react";
+// import { MoveUpRight } from "lucide-react";
 
 const teamMembers = [
   {
