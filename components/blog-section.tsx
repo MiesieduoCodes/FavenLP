@@ -1,26 +1,26 @@
 import Image from "next/image"
 // import { Button } from "@/components/ui/button"
 
-const blogPosts = [
-  {
-    title: "5 Things To Understand Before Signing Cloud Storage Contracts",
-    excerpt:
-      "Uncover the critical fine print that could put your business at risk and how to ensure your data remains protected legally...",
-    image: "/images/image.jpg",
-  },
-  {
-    title: "Adoption of Technology in B2B: A Case For Online Dispute Resolution",
-    excerpt:
-      "Explore how digital transformation is revolutionizing conflict resolution between businesses and creating more efficient paths to resolution...",
-    image: "/images/ADR.jpg",
-  },
-  {
-    title: "The Art of Negotiating a Savings Win-Win Solution",
-    excerpt:
-      "Learn practical techniques that can help both parties feel satisfied with the outcome while protecting your business interests...",
-    image: "/images/Lawperson.jpg",
-  },
-]
+// const blogPosts = [
+//   {
+//     title: "5 Things To Understand Before Signing Cloud Storage Contracts",
+//     excerpt:
+//       "Uncover the critical fine print that could put your business at risk and how to ensure your data remains protected legally...",
+//     image: "/images/image.jpg",
+//   },
+//   {
+//     title: "Adoption of Technology in B2B: A Case For Online Dispute Resolution",
+//     excerpt:
+//       "Explore how digital transformation is revolutionizing conflict resolution between businesses and creating more efficient paths to resolution...",
+//     image: "/images/ADR.jpg",
+//   },
+//   {
+//     title: "The Art of Negotiating a Savings Win-Win Solution",
+//     excerpt:
+//       "Learn practical techniques that can help both parties feel satisfied with the outcome while protecting your business interests...",
+//     image: "/images/Lawperson.jpg",
+//   },
+// ]
 
 export default function BlogSection() {
   return (
