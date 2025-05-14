@@ -67,32 +67,32 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary mb-12 text-center">Our Core Values</h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: <Users className="h-10 w-10 text-secondary" />,
-                title: "Client Partnership",
+                icon: <Users className="h-14 w-14 text-secondary" />,
+                title: "Trust",
                 description:
-                  "We view our client relationships as partnerships built on trust, transparency, and mutual respect.",
+                  "As a virtual-first firm, we engage with clients without physical contact. That’s why trust is at the heart of everything we do. We are committed to transparency, integrity, and reliability in every interaction.",
               },
               {
-                icon: <Award className="h-10 w-10 text-secondary" />,
+                icon: <Award className="h-14 w-14 text-secondary" />,
                 title: "Excellence",
                 description:
-                  "We hold ourselves to the highest standards in every aspect of our practice, from legal expertise to client service.",
+                  "We do not just meet expectations—we exceed them. Excellence is our standard, driving us to deliver top-tier services with precision and professionalism.",
               },
               {
-                icon: <BookOpen className="h-10 w-10 text-secondary" />,
-                title: "Continuous Learning",
+                icon: <BookOpen className="h-14 w-14 text-secondary" />,
+                title: "Collaboration & Partnership",
                 description:
-                  "We stay at the forefront of legal and technological developments to provide cutting-edge solutions.",
+                  "No one thrives in isolation, and no great system is built alone. We believe in the power of strategic partnerships, fostering collaborations rooted in trust to achieve long-term success.",
               },
-              {
-                icon: <Briefcase className="h-10 w-10 text-secondary" />,
-                title: "Integrity",
-                description:
-                  "We operate with unwavering ethical standards and always put our clients' best interests first.",
-              },
+              // {
+              //   icon: <Briefcase className="h-10 w-10 text-secondary" />,
+              //   title: "Integrity",
+              //   description:
+              //     "We operate with unwavering ethical standards and always put our clients' best interests first.",
+              // },
             ].map((value, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="mb-4">{value.icon}</div>
