@@ -128,7 +128,7 @@ export default function TestimonialsSection() {
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
                 <div className="p-8 bg-white/90 backdrop-blur-sm rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 h-full flex flex-col">
-                  <p className="text-lg text-gray-700 italic mb-6">
+                  <p className="text-lg line-clamp-3 text-gray-700 italic mb-6">
                     &quot;{testimonial.quote}&quot;
                   </p>
                   <div className="flex border-t-2 border-t-gray-400 pt-4 items-center mt-auto">
