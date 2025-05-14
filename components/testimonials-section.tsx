@@ -11,37 +11,30 @@ import { useState } from "react";
 const testimonials = [
   {
     quote:
-      "Faven LP provided exceptional guidance through our corporate restructuring. Their expertise in technology law made complex decisions straightforward.",
-    author: "Sarah Johnson",
-    title: "CEO, TechVision Inc.",
+      "We just want to say a big thank you for your amazing work.  From handling our NDPC, Korapay legal document and SCUML licenses to delivering a top-notch Data Protection Awareness Training, everything was done with so much professionalism and dedication. Your work ethic and attention to detail made the whole process smooth, and we truly appreciate you. We wouldn’t have had anyone else handle it better. Looking forward to working with you again!",
+    author: "Abdullateef Abiodu",
+    title: "Head of Operations Gold Elite Innovative Deals Limited (Gold Elite Deals)  Fintech/Edu tech.",
     image: "/placeholder.svg?height=60&width=60",
   },
   {
     quote:
-      "Working with the Faven team transformed our approach to compliance. They understood our needs and delivered practical solutions that work in the real world.",
-    author: "Michael Chen",
-    title: "CTO, Dataflow Systems",
+      "Ikionana Ezekiel, You excedded our expectations with your training. Thank you so much.",
+    author: "",
+    title: "The Practice Manager of a renounced DPCO",
     image: "/placeholder.svg?height=60&width=60",
   },
   {
     quote:
-      "The regulatory landscape seemed overwhelming until we partnered with Faven. Their team made compliance manageable and helped us navigate through challenging legal waters.",
-    author: "Emily Rodriguez",
-    title: "COO, FinSec Partners",
+      "When Ikionana Ezekiel took the Data Protection Awareness Training at Golearn, I walked into the room feeling confident that I wasn't going to hear something new. I was well acquainted with Data and the Nigerian Law. She however fired in every possible direction, brought many new perspectives, showed possible pitfalls and overall upped my knowledge of Data Issues in Nigeria. She was succinct!",
+    author: "Israel Akinola",
+    title: "Head, Golearn Campus Ambassadors' Program. Golearn",
     image: "/placeholder.svg?height=60&width=60",
   },
   {
     quote:
-      "The regulatory landscape seemed overwhelming until we partnered with Faven. Their team made compliance manageable and helped us navigate through challenging legal waters.",
-    author: "Emily Rodriguez",
-    title: "COO, FinSec Partners",
-    image: "/placeholder.svg?height=60&width=60",
-  },
-  {
-    quote:
-      "The regulatory landscape seemed overwhelming until we partnered with Faven. Their team made compliance manageable and helped us navigate through challenging legal waters.",
-    author: "Emily Rodriguez",
-    title: "COO, FinSec Partners",
+      "I learnt a lot from your training. I want to thank you for educating us on the new trends and development in the technological spaces, especially on data Protection and Privacy. ",
+    author: "",
+    title: "Student Trainee, Benny International High School.",
     image: "/placeholder.svg?height=60&width=60",
   },
 ];
