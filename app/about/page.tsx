@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Check, Users, BookOpen, Award, Briefcase } from "lucide-react"
+import { Check, Users, BookOpen, Award } from "lucide-react"
 
 export default function AboutPage() {
   return (
