@@ -58,7 +58,7 @@ export default function Footer() {
               <Link href="https://www.facebook.com/profile.php?id=100088242764425" className="text-primary-foreground hover:text-secondary">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-primary-foreground hover:text-secondary">
+              <Link href="https://x.com/favenlp?t=Q3eXVXxi3VmxjxKxSgHCog&s=09" className="text-primary-foreground hover:text-secondary">
                 <Twitter className="h-5 w-5" />
               </Link>
               <Link href="https://www.linkedin.com/company/favenlp/" className="text-primary-foreground hover:text-secondary">

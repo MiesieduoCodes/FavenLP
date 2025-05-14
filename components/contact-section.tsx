@@ -61,7 +61,7 @@ export default function ContactSection() {
               </div>
 
               <div className="flex w-full max-md:flex-col gap-6 md:gap-20">
-                <h3 className="text-2xl font-semibold">Phone</h3>
+                <h3 className="text-2xl font-semibold">Contact</h3>
                 <div className="text-gray-300 ">
                   <p>+2349068126885</p>
                   <Link className="" href={"mailto:ikionanaezekiel@gmail.com"}> ikionanaezekiel@gmail.com</Link>
@@ -84,7 +84,7 @@ export default function ContactSection() {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="bg-white flex items-center justify-center p-4 md:p-8 w-full rounded-lg">
+          <div className="bg-white flex items-center justify-center p-4 md:p-8 w-full h-fit rounded-lg">
             <form onSubmit={handleSubmit} className="space-y-6 flex-col gap-4 w-full">
               <div className="w-full">
                 <Input
