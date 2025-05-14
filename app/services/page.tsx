@@ -1,4 +1,6 @@
+"use client" // if using App Router
 
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, ArrowRight } from "lucide-react"
 
@@ -15,7 +17,7 @@ const services = [
       "Privacy policy development and implementation",
       "Breach response planning and management",
     ],
-    cta: "Ensure Your Compliance",
+    cta: "Contact us",
   },
   {
     id: "corporate",
@@ -29,7 +31,7 @@ const services = [
       "Corporate policy development",
       "Governance audits and recommendations",
     ],
-    cta: "Strengthen Your Governance",
+    cta: "Get started",
   },
   {
     id: "ip",
@@ -43,7 +45,7 @@ const services = [
       "IP portfolio management",
       "Trade secret protection strategies",
     ],
-    cta: "Protect Your Innovations",
+    cta: "Get started",
   },
   {
     id: "contracts",
@@ -57,26 +59,26 @@ const services = [
       "Employment and consultant agreements",
       "Strategic negotiation support",
     ],
-    cta: "Optimize Your Agreements",
+    cta: "Contact us",
   },
   {
     id: "dispute",
     title: "Dispute Resolution",
-    description: "Resolve conflicts efficiently while preserving relationships",
+    description: "Reach out to us to assist in resolving conflicts efficiently while preserving relationships",
     image: "https://images.pexels.com/photos/7841412/pexels-photo-7841412.jpeg?auto=compress&cs=tinysrgb&w=600",
     features: [
       "Mediation and arbitration services",
       "Pre-litigation strategy development",
       "Online dispute resolution",
       "Settlement negotiation",
-      "Litigation management when necessary",
+      "Reach out",
     ],
-    cta: "Resolve Your Disputes",
+    cta: "Contact us",
   },
   {
     id: "digital",
     title: "Digital Transformation Advisory",
-    description: "Align your technology initiatives with legal requirements",
+    description: "Contact us and align your technology initiatives with legal requirements",
     image: "https://images.pexels.com/photos/8867268/pexels-photo-8867268.jpeg?auto=compress&cs=tinysrgb&w=600",
     features: [
       "Legal framework for digital products",
@@ -85,11 +87,18 @@ const services = [
       "Digital contract implementation",
       "Technology procurement advice",
     ],
-    cta: "Transform Legally",
+    cta: "Get Started",
   },
 ]
 
 export default function ServicesPage() {
+
+  const router = useRouter()
+
+  const handleNavigate = (title: string) => {
+    const encodedTitle = encodeURIComponent(title)
+    router.push(`/contact?service=${encodedTitle}`)
+  }
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
@@ -119,16 +128,19 @@ export default function ServicesPage() {
                   <ul className="space-y-3 mb-8">
                     {service.features.map((feature, i) => (
                       <li key={i} className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-secondary mt-1 mr-3 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-gray-400 mt-1 mr-3 flex-shrink-0" />
                         <span className="text-gray-700">{feature}</span>
                       </li>
                     ))}
                   </ul>
 
-                  <Button className="bg-primary hover:bg-primary/90 text-white">
+                  <button
+                    onClick={() => handleNavigate(service.title)}
+                    className="bg-primary rounded-2xl py-3 flex items-center justify-center px-6 hover:bg-primary/90 text-white"
+                  >
                     {service.cta}
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  </button>
                 </div>
 
                 <div className={`rounded-lg overflow-hidden shadow-lg ${index % 2 !== 0 ? "md:col-start-1" : ""}`}>

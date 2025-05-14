@@ -43,7 +43,7 @@ export default function ContactSection() {
 
             <div className="space-y-4">
               <div className="w-full max-md:flex-col gap-6 flex md:gap-20">
-                <h3 className="text-2xl font-semibold">Address</h3>
+                <h3 className="text-2xl w-[30%] font-semibold">Address</h3>
                 <p className="text-gray-300  leading-relaxed">
                   Bayelsa Tech Hub, 4th Floor, Transperacy Plaza,
                   <br />
@@ -56,12 +56,12 @@ export default function ContactSection() {
               </div>
 
               <div className="flex w-full max-md:flex-col gap-6 md:gap-20">
-                <h3 className="text-2xl font-semibold">Hours</h3>
+                <h3 className="text-2xl w-[30%] font-semibold">Hours</h3>
                 <p className="text-gray-300">Monday - Saturday: 9am - 4pm</p>
               </div>
 
               <div className="flex w-full max-md:flex-col gap-6 md:gap-20">
-                <h3 className="text-2xl font-semibold">Contact</h3>
+                <h3 className="text-2xl w-[30%] font-semibold">Contact</h3>
                 <div className="text-gray-300 ">
                   <p>+2349068126885</p>
                   <Link className="" href={"mailto:ikionanaezekiel@gmail.com"}> ikionanaezekiel@gmail.com</Link>
