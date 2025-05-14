@@ -18,7 +18,7 @@ export default function Home() {
       <TeamSection />
       <TestimonialsSection />
       <ContactCta />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <ContactSection/>
     </div>
   )
