@@ -7,7 +7,7 @@ const services = [
     id: "regulatory",
     title: "Regulatory Compliance & Privacy",
     description: "Navigate complex regulatory frameworks with confidence",
-    image: "https://images.pexels.com/photos/7841418/pexels-photo-7841418.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "/images/security.jpeg",
     features: [
       "Data privacy compliance (GDPR, CCPA, etc.)",
       "Industry-specific regulatory guidance",
@@ -21,7 +21,7 @@ const services = [
     id: "corporate",
     title: "Corporate Governance",
     description: "Build strong frameworks for effective business management",
-    image: "https://images.pexels.com/photos/12911948/pexels-photo-12911948.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "/images/governance.jpeg",
     features: [
       "Board structure and responsibilities",
       "Executive compensation planning",
@@ -35,7 +35,7 @@ const services = [
     id: "ip",
     title: "Intellectual Property & Technology Law",
     description: "Protect and leverage your most valuable assets",
-    image: "https://images.pexels.com/photos/6077122/pexels-photo-6077122.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "/images/intellectual_prop.jpeg",
     features: [
       "Patent application and enforcement",
       "Trademark and copyright protection",
@@ -154,8 +154,8 @@ export default function ServicesPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
             {["Technology", "Finance", "Healthcare", "E-commerce", "Manufacturing", "Professional Services"].map(
               (industry, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="font-bold text-primary">{industry}</h3>
+                <div key={index} className="bg-white px-10 py-4 w-fit rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <h3 className="font-bold text-primary text-nowrap">{industry}</h3>
                 </div>
               ),
             )}

@@ -12,15 +12,20 @@ export default function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    email: "",
     message: "",
-  })
+  });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log(formData)
-  }
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const subject = encodeURIComponent("New Message from Contact Form");
+    const body = encodeURIComponent(
+      `Hi i'm ${formData.name}\nMy Phone number is: ${formData.phone}\nMessage:\n${formData.message}`
+    );
+
+    const mailtoLink = `mailto:ikionanaezekiel@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+  };
 
   return (
     <section id="contact" className="bg-[#0C1B33] text-white">
@@ -32,9 +37,9 @@ export default function ContactSection() {
             <p className="text-lg text-gray-300">
               Feel free to contact us for any business, media, or personal inquiries:
             </p>
-            <p>we operate virtually and a means for them to reach us tied to 
-             <Link href={"mailto:ikionanaezekiel@gmail.com"} className="hover:text-blue-300"> ikionanaezekiel@gmail.com</Link>
-              </p>
+            <p>we operate virtually and a means for them to reach us tied to
+              <Link href={"mailto:ikionanaezekiel@gmail.com"} className="hover:text-blue-300"> ikionanaezekiel@gmail.com</Link>
+            </p>
 
             <div className="space-y-4">
               <div className="w-full max-md:flex-col gap-6 flex md:gap-20">
@@ -59,6 +64,7 @@ export default function ContactSection() {
                 <h3 className="text-2xl font-semibold">Phone</h3>
                 <div className="text-gray-300 ">
                   <p>+2349068126885</p>
+                  <Link className="" href={"mailto:ikionanaezekiel@gmail.com"}> ikionanaezekiel@gmail.com</Link>
                 </div>
               </div>
             </div>
@@ -87,35 +93,26 @@ export default function ContactSection() {
                   className="w-full bg-[#F4F4F4] border-none h-12 text-gray-900"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  required
                 />
               </div>
               <div className="w-full">
-
                 <Input
                   type="tel"
                   placeholder="Phone Number"
                   className="w-full bg-[#F4F4F4] border-none h-12 text-gray-900"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  required
                 />
               </div>
               <div className="w-full">
-
-                <Input
-                  type="email"
-                  placeholder="Email"
-                  className="w-full bg-[#F4F4F4] border-none h-12 text-gray-900"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                />
-              </div>
-              <div className="w-full">
-
                 <Textarea
                   placeholder="Message..."
                   className="w-full bg-[#F4F4F4] border-none min-h-[250px] text-gray-900 resize-none"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  required
                 />
               </div>
               <button
