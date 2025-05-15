@@ -2,31 +2,12 @@
 
 import type React from "react"
 
-import { useState } from "react"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+// import { useState } from "react"
 import Link from "next/link"
+import ContactForm from "./contactForm"
 // import { Button } from "@/components/ui/button"
 
 export default function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const subject = encodeURIComponent("New Message from Contact Form");
-    const body = encodeURIComponent(
-      `Hi i'm ${formData.name}\nMy Phone number is: ${formData.phone}\nMessage:\n${formData.message}`
-    );
-
-    const mailtoLink = `mailto:ikionanaezekiel@gmail.com?subject=${subject}&body=${body}`;
-    window.location.href = mailtoLink;
-  };
-
   return (
     <section id="contact" className="bg-[#0C1B33] text-white">
       <div className="container mx-auto px-4 py-16">
@@ -84,45 +65,7 @@ export default function ContactSection() {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="bg-white flex items-center justify-center p-4 md:p-8 w-full h-fit rounded-lg">
-            <form onSubmit={handleSubmit} className="space-y-6 flex-col gap-4 w-full">
-              <div className="w-full">
-                <Input
-                  type="text"
-                  placeholder="Name"
-                  className="w-full bg-[#F4F4F4] border-none h-12 text-gray-900"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  required
-                />
-              </div>
-              <div className="w-full">
-                <Input
-                  type="tel"
-                  placeholder="Phone Number"
-                  className="w-full bg-[#F4F4F4] border-none h-12 text-gray-900"
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  required
-                />
-              </div>
-              <div className="w-full">
-                <Textarea
-                  placeholder="Message..."
-                  className="w-full bg-[#F4F4F4] border-none min-h-[250px] text-gray-900 resize-none"
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  required
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-[#0C1B33] hover:bg-[#0C1B33]/90 text-white rounded-full text-lg font-medium py-3"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
+          <ContactForm/>
 
         </div>
 
