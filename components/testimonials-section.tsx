@@ -55,8 +55,9 @@ function TeamImage({ src, alt }: { src: string; alt: string }) {
   );
 }
 
+// ... rest of your imports and code unchanged
+
 export default function TestimonialsSection() {
-  // Track which testimonial cards are expanded (store by index)
   const [expanded, setExpanded] = useState<number | null>(null);
 
   const toggleExpand = (index: number) => {
@@ -76,48 +77,14 @@ export default function TestimonialsSection() {
         </h3>
 
         <div className="relative max-w-6xl mx-auto">
-          {/* Navigation Buttons */}
-          <button className="swiper-button-prev absolute left-0 top-1/2 -translate-y-1/2 z-20 transition-all">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-gray-700"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </button>
-          <button className="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 z-20 transition-all">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-gray-700"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
-
           {/* Swiper Container */}
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
             navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+              nextEl: ".custom-swiper-button-next",
+              prevEl: ".custom-swiper-button-prev",
             }}
             pagination={{ clickable: true }}
             autoplay={{ delay: 5000, disableOnInteraction: false }}
@@ -148,7 +115,6 @@ export default function TestimonialsSection() {
                       &quot;
                     </p>
 
-                    {/* Read More / Show Less button only if quote is longer than previewLength */}
                     {testimonial.quote.length > previewLength && (
                       <button
                         onClick={() => toggleExpand(index)}
@@ -176,8 +142,53 @@ export default function TestimonialsSection() {
               );
             })}
           </Swiper>
+
+          {/* NEW: Navigation Buttons outside swiper, centered below */}
+          <div className="flex justify-center space-x-6 mt-8">
+            <button
+              className="custom-swiper-button-prev bg-white text-gray-700 px-4 py-2 rounded-md shadow-md hover:bg-gray-100 transition"
+              aria-label="Previous testimonial"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 inline-block"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+              <span className="sr-only">Previous</span>
+            </button>
+            <button
+              className="custom-swiper-button-next bg-white text-gray-700 px-4 py-2 rounded-md shadow-md hover:bg-gray-100 transition"
+              aria-label="Next testimonial"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 inline-block"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+              <span className="sr-only">Next</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
   );
 }
+

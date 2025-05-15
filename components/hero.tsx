@@ -1,6 +1,15 @@
-// import { Button } from "@/components/ui/button"
+"use client"
+import { useRouter } from "next/navigation"
 
 export default function Hero() {
+  const title = "book consultation"
+
+  const router = useRouter()
+
+  const handleNavigate = (title: string) => {
+    const encodedTitle = encodeURIComponent(title)
+    router.push(`/contact?service=${encodedTitle}`)
+  }
   return (
     <section className="relative h-full bg-primary text-primary-foreground overflow-hidden transition-theme">
       <div className="absolute inset-0 z-0">
@@ -39,7 +48,7 @@ export default function Hero() {
           <p className="text-lg lufga md:text-xl mb-8 text-primary-foreground/80">
             We bridge the Gap between law, business and technology - delivering practical legal guidance that drives result
           </p>
-          <button className="border cursor-pointer hover:bg-[#9b7f3e] hover:text-white transition-all ease-in-out duration-200  border-[#9B7F4E] text-[#9B7F4E] rounded-full py-4 px-6 bg-white">
+          <button onClick={() => handleNavigate(title)} className="border cursor-pointer hover:bg-[#9b7f3e] hover:text-white transition-all ease-in-out duration-200  border-[#9B7F4E] text-[#9B7F4E] rounded-full py-4 px-6 bg-white">
             Book a Consultation
           </button>
         </div>
