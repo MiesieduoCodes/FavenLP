@@ -11,7 +11,6 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 
 
-SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const testimonials = [
   {
@@ -63,6 +62,8 @@ function TeamImage({ src, alt }: { src: string; alt: string }) {
 // ... rest of your imports and code unchanged
 
 export default function TestimonialsSection() {
+  SwiperCore.use([Navigation, Pagination, Autoplay]);
+
   const [expanded, setExpanded] = useState<number | null>(null);
 
   const swiperRef = useRef<SwiperCore | null>(null);
