@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Check, Users, BookOpen, Award } from "lucide-react"
+// import { Button } from "@/components/ui/button"
+import { Users, BookOpen, Award } from "lucide-react"
 import Link from "next/link"
 
 export default function AboutPage() {
@@ -44,7 +44,7 @@ export default function AboutPage() {
                 </p>
 
                 <p>
-                  Whether you're a <span className="font-bold italic text-[#0a3d62]">startup</span>, a
+                  Whether you&apis;re a <span className="font-bold italic text-[#0a3d62]">startup</span>, a
                   <span className="font-bold italic text-[#0a3d62]"> growing business</span>, or a
                   <span className="font-bold italic text-[#0a3d62]"> seasoned tech leader</span>,
                   <span className="font-bold italic text-[#0a3d62]"> FAVEN LP</span> is your
