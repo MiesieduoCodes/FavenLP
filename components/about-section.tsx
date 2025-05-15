@@ -24,7 +24,7 @@ export default function AboutSection() {
             <div className="flex flex-col gap-8">
               <h2 className="text-2xl font-bold lufga ">About Us</h2>
 
-              <h3 className="text-4xl  lufga text-primary">Your case is in the right hands!</h3>
+              {/* <h3 className="text-4xl  lufga text-primary">Your case is in the right hands!</h3> */}
             </div>
             <div className={`text-gray-800 space-y-4 ${isExpanded ? "pt-10":""}`}>
               <p>
