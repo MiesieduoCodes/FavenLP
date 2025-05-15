@@ -163,10 +163,10 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary mb-12 text-center">Industries We Serve</h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
             {["Technology", "Finance", "Healthcare", "E-commerce", "Manufacturing", "Professional Services"].map(
               (industry, index) => (
-                <div key={index} className="bg-white px-10 py-4 w-fit rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div key={index} className="bg-white px-10 py-4 w-full md:w-fit rounded-lg shadow-sm hover:shadow-md transition-shadow">
                   <h3 className="font-bold text-primary text-nowrap">{industry}</h3>
                 </div>
               ),

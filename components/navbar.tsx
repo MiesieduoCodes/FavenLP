@@ -74,7 +74,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link href={"#contact"}
+            <Link href={"/contact"}
               className=" rounded-full py-3 items-center justify-center flex lufga hover:bg-white hover:text-blue-950 bg-foreground text-white font-medium w-full"
               onClick={() => setIsMenuOpen(false)}
             >

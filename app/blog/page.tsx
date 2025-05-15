@@ -7,7 +7,7 @@ export default function BlogPage() {
       {/* Hero Section */}
       <section className="bg-primary text-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold mb-6">Blog</h1>
+          <h1 className="text-5xl font-bold mb-6">Blog</h1>
           <p className="text-xl max-w-3xl mx-auto">
             Insights and analysis on legal technology, compliance, and business strategy
           </p>
@@ -19,10 +19,10 @@ export default function BlogPage() {
         <div className="container mx-auto px-4">
           <div className="gap-8">
             {/* Sidebar */}
-            <div className="flex w-full gap-12">
-              <div className="flex w-1/2 flex-col gap-4">
-                <h2 className="text-3xl font-bold text-primary">Blog</h2>
-                <h3 className="text-2xl font-semibold text-primary">
+            <div className="flex w-full max-md:flex-col gap-12">
+              <div className="flex md:w-1/2 w-full flex-col gap-4">
+                {/* <h2 className="text-3xl font-bold text-primary">Blog</h2> */}
+                <h3 className="text-3xl font-semibold text-primary">
                   Faven LP at NADPA Conference 2025
                 </h3>
                 <div className="space-y-4 text-base leading-relaxed">
@@ -69,7 +69,7 @@ export default function BlogPage() {
                 {/* Blog Posts */}
               </div>
 
-              <div className="w-1/2 h-[80vh]">
+              <div className="md:w-1/2 w-full md:h-[80vh]">
                 <SwiperGallery />
               </div>
             </div>

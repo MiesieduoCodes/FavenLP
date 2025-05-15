@@ -95,7 +95,7 @@ export default function AboutSection() {
       </div>
       <div className="flex w-full ">
 
-        <Link className="mx-auto " href="/about">
+        <Link className="mx-auto " href="/contact">
           <button className="lufga hover:bg-white border border-transparent hover:border-primary rounded-full py-3 px-6  hover:text-blue-950 transition-all ease-in-out duration-200 bg-foreground text-white"> Contact Us</button>
         </Link>
       </div>

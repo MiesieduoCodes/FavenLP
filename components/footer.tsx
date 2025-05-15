@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground transition-theme flex flex-col items-center">
       <div className="container mx-auto px-4 py-12 flex justify-center">
-        <div className="flex justify-between w-full gap-8">
+        <div className="flex justify-between w-full  max-md:flex-col gap-8">
           {/* Company Info */}
           <div >
             <h3 className="text-5xl font-bold mb-4">Faven LP</h3>
@@ -44,7 +44,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contact" className="text-primary-foreground/80 hover:translate-x-4 transition-all ease-in-out duration-200 hover:text-primary-foreground">
+                  <Link href="/contact" className="text-primary-foreground/80 hover:translate-x-4 transition-all ease-in-out duration-200 hover:text-primary-foreground">
                     Contact Us
                   </Link>
                 </li>

@@ -50,9 +50,9 @@ export default function ServicesSection() {
               <h3 className="text-lg font-bold lufga text-primary mb-3">{service.title}</h3>
               <div>
                 <p className="text-foreground/80 lufga text-sm flex-grow mb-4">{service.description}</p>
-                <p className="text-[#1E4075]">
+                {/* <p className="text-[#1E4075]">
                   See more
-                </p>
+                </p> */}
               </div>
               <div>
               </div>

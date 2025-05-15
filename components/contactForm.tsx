@@ -35,7 +35,7 @@ export default function ContactForm() {
     };
 
     return (
-        <div className="bg-white text-black rounded-lg p-8 h-fit shadow-md">
+        <div className="bg-white text-black rounded-lg p-4 md:p-8 h-fit shadow-md">
             <h2 className="text-2xl font-bold text-primary mb-6">Send Us a Message</h2>
             <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

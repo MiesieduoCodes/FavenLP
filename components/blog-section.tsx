@@ -52,8 +52,8 @@ export default function BlogSection() {
           ))}
         </div> */}
 
-        <div className="flex w-full gap-12">
-          <div className="flex w-1/2 flex-col gap-4">
+        <div className="flex w-full max-md:flex-col gap-12">
+          <div className="flex md:w-1/2 w-full flex-col gap-4">
             <h2 className="text-4xl font-bold text-primary">Blog</h2>
             <h3 className="text-3xl font-semibold text-primary">
               Faven LP at NADPA Conference 2025
