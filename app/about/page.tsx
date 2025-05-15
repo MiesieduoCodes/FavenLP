@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Check, Users, BookOpen, Award } from "lucide-react"
+import Link from "next/link"
 
 export default function AboutPage() {
   return (
@@ -139,9 +140,9 @@ export default function AboutPage() {
           <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
             Let&apos;s discuss how our legal expertise can support your business goals and technological initiatives.
           </p>
-          <Button className="bg-secondary hover:bg-secondary/90 text-primary font-bold px-8 py-6 h-auto text-lg">
+          <Link href="/contact" className="bg-secondary hover:bg-secondary/90 rounded-xl text-primary font-bold px-8 py-6 h-auto text-lg">
             Contact Our Team
-          </Button>
+          </Link>
         </div>
       </section>
     </div>

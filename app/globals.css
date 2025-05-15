@@ -8,10 +8,8 @@
   --font-mono: var(--font-geist-mono);
 }
 
-.swiper-pagination {
-  display: flex !important;
-  justify-content: center;
-  padding-top: 10px; /* Adjust padding as needed */
+.swiper-button-prev,.swiper-button-next{
+
 }
 
 .swiper-pagination-bullet-active{
@@ -85,10 +83,7 @@
   }
 }
 
-.swiper-pagination-bullet {
-  background: #4f46e5; /* Change color to match your theme */
-  opacity: 1; /* Ensure bullets are visible */
-}
+/*  */
 :root {
   --background: oklch(1 0 0);
   --foreground: #152D53;
@@ -206,4 +201,9 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+.swiper-pagination{
+  display: none !important;
 }

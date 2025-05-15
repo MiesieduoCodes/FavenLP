@@ -1,4 +1,4 @@
-"use client"; // Ensure this is a client component
+"use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -46,17 +46,23 @@ function TeamImage({ src, alt }: { src: string; alt: string }) {
   return (
     <Image
       src={imgSrc}
-      alt={alt}
+      alt={alt || "User image"}
       width={40}
       height={40}
-      className="w-full h-full object-cover"
+      className="w-full h-full object-cover rounded-full"
       onError={() => setImgSrc("/images/placeholder-image.png")} // fallback path
     />
   );
 }
 
-
 export default function TestimonialsSection() {
+  // Track which testimonial cards are expanded (store by index)
+  const [expanded, setExpanded] = useState<number | null>(null);
+
+  const toggleExpand = (index: number) => {
+    setExpanded((prev) => (prev === index ? null : index));
+  };
+
   return (
     <section className="relative py-20 transition-theme">
       <div className="absolute inset-0 bg-[url('/images/Testimonial.png')] bg-cover bg-center before:absolute before:inset-0 before:bg-black/60"></div>
@@ -114,7 +120,7 @@ export default function TestimonialsSection() {
               prevEl: ".swiper-button-prev",
             }}
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
             breakpoints={{
               640: {
                 slidesPerView: 2,
@@ -125,34 +131,50 @@ export default function TestimonialsSection() {
             }}
             className="max-w-6xl mx-auto"
           >
-            {testimonials.map((testimonial, index) => (
-              <SwiperSlide key={index}>
-                <div className="p-8 bg-white/90 backdrop-blur-sm rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 h-full flex flex-col">
-                  <p className="text-lg line-clamp-3 text-gray-700 italic mb-6">
-                    &quot;{testimonial.quote}&quot;
-                  </p>
-                  <div className="flex border-t-2 border-t-gray-400 pt-4 items-center mt-auto">
-                    <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                      {/* <Image
-                        src={testimonial.image || "/placeholder.svg"}
-                        alt={testimonial.author}
-                        width={60}
-                        height={60}
-                        className="w-full h-full object-cover"
-                      /> */}
-                      <TeamImage src={testimonial.image} alt={testimonial.author} />
+            {testimonials.map((testimonial, index) => {
+              const isExpanded = expanded === index;
+              const previewLength = 130;
 
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900">
-                        {testimonial.author}
-                      </h4>
-                      <p className="text-sm text-gray-600">{testimonial.title}</p>
+              return (
+                <SwiperSlide key={index}>
+                  <div className="p-8 bg-white/90 backdrop-blur-sm rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 h-full flex flex-col">
+                    <p className="text-lg text-gray-700 italic mb-4">
+                      &quot;
+                      {isExpanded
+                        ? testimonial.quote
+                        : testimonial.quote.length > previewLength
+                        ? testimonial.quote.slice(0, previewLength) + "..."
+                        : testimonial.quote}
+                      &quot;
+                    </p>
+
+                    {/* Read More / Show Less button only if quote is longer than previewLength */}
+                    {testimonial.quote.length > previewLength && (
+                      <button
+                        onClick={() => toggleExpand(index)}
+                        className="text-blue-600 hover:text-blue-700 text-sm font-semibold mb-6 self-start transition-colors"
+                        aria-expanded={isExpanded}
+                        aria-controls={`testimonial-text-${index}`}
+                      >
+                        {isExpanded ? "Show Less ▲" : "Read More ▼"}
+                      </button>
+                    )}
+
+                    <div className="flex border-t-2 border-t-gray-400 pt-4 items-center mt-auto">
+                      <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+                        <TeamImage src={testimonial.image} alt={testimonial.author} />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900">
+                          {testimonial.author || "Anonymous"}
+                        </h4>
+                        <p className="text-sm text-gray-600">{testimonial.title}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </div>

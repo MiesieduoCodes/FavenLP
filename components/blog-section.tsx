@@ -104,19 +104,19 @@ export default function BlogSection() {
             <div className="col-span-2  rounded-2xl overflow-hidden">
               <Image src={'/images/post1.jpg'} alt="#" height={300} width={900} className=""></Image>
             </div>
-            <div className="bg-blue-400 rounded-2xl overflow-hidden">
+            <div className="bg-gray-100 rounded-2xl overflow-hidden">
               <Image src={'/images/post3.jpg'} alt="#" height={100} width={800} className="w-full object-cover h-full"></Image>
             </div>
-            <div className="bg-blue-400 rounded-2xl overflow-hidden">
+            <div className="bg-gray-100 rounded-2xl overflow-hidden">
               <Image src={'/images/post6.jpg'} alt="#" height={100} width={1000} className="w-full object-cover h-full"></Image>
             </div>
             <div className="col-span-2  rounded-2xl overflow-hidden">
               <Image src={'/images/post7.jpg'} alt="#" height={300} width={900} className=""></Image>
             </div>
-            <div className="bg-blue-400 rounded-2xl overflow-hidden">
+            <div className="bg-gray-100 rounded-2xl overflow-hidden">
               <Image src={'/images/post9.jpg'} alt="#" height={100} width={800} className="w-full object-cover h-full"></Image>
             </div>
-            <div className="bg-blue-400 rounded-2xl overflow-hidden">
+            <div className="bg-gray-100 rounded-2xl overflow-hidden">
               <Image src={'/images/post10.jpg'} alt="#" height={100} width={1000} className="w-full object-cover h-full"></Image>
             </div>
           </div>
