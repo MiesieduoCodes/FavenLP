@@ -18,44 +18,53 @@ export default function AboutPage() {
       {/* Our Story */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 h-full items-center">
             <div>
               <h2 className="text-3xl font-bold text-primary mb-6">Our Story</h2>
-              <p className="text-gray-700 mb-4">
-                Founded in 2010, Faven LP began with a simple mission: to bridge the gap between legal compliance and
-                technological innovation. Our founders recognized that as technology transformed business, the legal
-                frameworks supporting these businesses needed to evolve as well.
-              </p>
-              <p className="text-gray-700 mb-4">
-                Over the years, we&apos;ve grown from a small practice to a specialized firm with expertise across regulatory
-                compliance, corporate governance, intellectual property, and technology law. Our approach combines deep
-                legal knowledge with practical business acumen.
-              </p>
-              <p className="text-gray-700 mb-4">
-                Today, we serve clients ranging from startups to Fortune 500 companies, helping them navigate complex
-                legal landscapes while embracing technological change.
-              </p>
-              <ul className="space-y-2 mb-6">
-                {[
-                  "Client-focused approach to every case",
-                  "Technology-driven legal solutions",
-                  "Transparent communication and pricing",
-                  "Industry-specific expertise",
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center">
-                    <Check className="h-5 w-5 text-secondary mr-2" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="text-gray-800 space-y-4">
+                <p>
+                  At <span className="font-bold italic text-[#0a3d62]">FAVEN LP</span>, we understand the intersection of
+                  <span className="font-bold italic text-[#0a3d62]"> technology, law, and business</span>.
+                  As a <span className="font-bold italic text-[#0a3d62]">premier IT law firm</span>, we specialize in providing
+                  expert legal counsel to clients navigating the complexities of the digital world.
+                </p>
+
+                <p>
+                  With a strong focus on <span className="font-bold italic text-[#0a3d62]">tech, law, and representation</span>,
+                  our firm delivers <span className="font-bold italic text-[#0a3d62]">strategic solutions</span> with a soft touch —
+                  ensuring every client feels <span className="font-bold italic text-[#0a3d62]">heard, valued, and understood</span>.
+                </p>
+
+                <p>
+                  We are committed to building <span className="font-bold italic text-[#0a3d62]">lasting relationships</span> based on trust,
+                  guiding our clients through challenges with
+                  <span className="font-bold italic text-[#0a3d62]"> unwavering support</span> and
+                  <span className="font-bold italic text-[#0a3d62]"> unparalleled expertise</span>.
+                </p>
+
+                <p>
+                  Whether you're a <span className="font-bold italic text-[#0a3d62]">startup</span>, a
+                  <span className="font-bold italic text-[#0a3d62]"> growing business</span>, or a
+                  <span className="font-bold italic text-[#0a3d62]"> seasoned tech leader</span>,
+                  <span className="font-bold italic text-[#0a3d62]"> FAVEN LP</span> is your
+                  <span className="font-bold italic text-[#0a3d62]"> safe and reliable legal partner</span> — empowering you to
+                  <span className="font-bold italic text-[#0a3d62]"> innovate and thrive</span> in today’s fast-paced, tech-driven world.
+                </p>
+
+                <p>
+                  Let us provide the <span className="font-bold italic text-[#0a3d62]">comfort and security</span> you need to
+                  <span className="font-bold italic text-[#0a3d62]"> move forward — with confidence</span>.
+                </p>
+              </div>
+
             </div>
-            <div className="relative rounded-lg overflow-hidden">
+            <div className="relative rounded-lg h-[60%] overflow-hidden">
               <Image
                 src="/images/team.jpeg"
                 alt="Our team working together"
                 width={800}
                 height={600}
-                className="w-full h-auto rounded-lg"
+                className="w-full h-full object-cover rounded-lg"
               />
             </div>
           </div>
@@ -97,7 +106,7 @@ export default function AboutPage() {
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="mb-4">{value.icon}</div>
                 <h3 className="font-bold text-xl mb-3 text-primary">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
+                <p className="text-gray-600 italic">{value.description}</p>
               </div>
             ))}
           </div>
