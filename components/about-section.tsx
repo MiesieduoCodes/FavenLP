@@ -26,28 +26,47 @@ export default function AboutSection() {
 
               <h3 className="text-4xl  lufga text-primary">Your case is in the right hands!</h3>
             </div>
-            <p className="text-foreground/80">
-              At Faven LP, we pursue the highest quality legal solutions for our clients. As a specialized law firm, we
-              combine expert legal insights with innovative technology strategy to deliver results that elevate your
-              business.
-            </p>
-            <p className="text-foreground/80">
-              Our team consists of knowledgeable attorneys who understand the challenges of modern business. We focus on
-              enabling growth while maintaining compliance and minimizing risk.
-            </p>
+            <div className={`text-gray-800 space-y-4 ${isExpanded ? "pt-10":""}`}>
+              <p>
+                At <span className="font-bold italic text-[#0a3d62]">FAVEN LP</span>, we understand the intersection of
+                <span className="font-bold italic text-[#0a3d62]"> technology, law, and business</span>.
+                As a <span className="font-bold italic text-[#0a3d62]">premier IT law firm</span>, we specialize in providing
+                expert legal counsel to clients navigating the complexities of the digital world.
+              </p>
+
+              <p>
+                With a strong focus on <span className="font-bold italic text-[#0a3d62]">tech, law, and representation</span>,
+                our firm delivers <span className="font-bold italic text-[#0a3d62]">strategic solutions</span> with a soft touch —
+                ensuring every client feels <span className="font-bold italic text-[#0a3d62]">heard, valued, and understood</span>.
+              </p>
+
+
+            </div>
 
             {/* Accordion Section */}
             <div
               className={`overflow-hidden transition-all duration-300 ease-in-out ${isExpanded ? "max-h-[500px]" : "max-h-0"
                 }`}
             >
-              <p className="text-foreground/80">
-                We are dedicated to building constructive relationships founded on trust, genuine interest in
-                client&apos;s goals, and establishing sustainable practices and thoughtful execution.
+              <p>
+                We are committed to building <span className="font-bold italic text-[#0a3d62]">lasting relationships</span> based on trust,
+                guiding our clients through challenges with
+                <span className="font-bold italic text-[#0a3d62]"> unwavering support</span> and
+                <span className="font-bold italic text-[#0a3d62]"> unparalleled expertise</span>.
               </p>
-              <p className="text-foreground/80">
-                Our approach is tailored to meet the unique needs of each client, ensuring that we provide the best
-                possible outcomes for your legal challenges.
+
+              <p>
+                Whether you&apis;re a <span className="font-bold italic text-[#0a3d62]">startup</span>, a
+                <span className="font-bold italic text-[#0a3d62]"> growing business</span>, or a
+                <span className="font-bold italic text-[#0a3d62]"> seasoned tech leader</span>,
+                <span className="font-bold italic text-[#0a3d62]"> FAVEN LP</span> is your
+                <span className="font-bold italic text-[#0a3d62]"> safe and reliable legal partner</span> — empowering you to
+                <span className="font-bold italic text-[#0a3d62]"> innovate and thrive</span> in today’s fast-paced, tech-driven world.
+              </p>
+
+              <p>
+                Let us provide the <span className="font-bold italic text-[#0a3d62]">comfort and security</span> you need to
+                <span className="font-bold italic text-[#0a3d62]"> move forward — with confidence</span>.
               </p>
             </div>
 

@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 // import { Button } from "@/components/ui/button"
 
 // const blogPosts = [
@@ -53,11 +54,11 @@ export default function BlogSection() {
 
         <div className="flex w-full gap-12">
           <div className="flex w-1/2 flex-col gap-4">
-            <h2 className="text-3xl font-bold text-primary">Blog</h2>
-            <h3 className="text-2xl font-semibold text-primary">
+            <h2 className="text-4xl font-bold text-primary">Blog</h2>
+            <h3 className="text-3xl font-semibold text-primary">
               Faven LP at NADPA Conference 2025
             </h3>
-            <div className="space-y-4 text-base leading-relaxed">
+            <div className="space-y-4 text-base md:text-2xl leading-relaxed">
               <p>
                 Delegates from <span style={{ color: "#003366", fontWeight: "bold" }}>Faven LP</span> were honoured to participate in the <span style={{ color: "#003366", fontWeight: "bold" }}>2025 NADPA Conference</span>, held at the prestigious Transcorp Hilton, Abuja, from the <span style={{ color: "#003366" }}>6th to 8th of May, 2025</span>.
               </p>
@@ -66,7 +67,10 @@ export default function BlogSection() {
                 The conference proved to be an enriching experience—offering invaluable insights, engaging conversations, and strategic networking with leading figures in the global digital and data protection space.
               </p>
 
-              <p>
+              <Link href={"/blog"} className="bg-primary text-lg hover:border-primary border border-transparent ease-in-out transition-all duration-300 rounded-xl text-white px-6 py-3">
+                Read more
+              </Link>
+              {/* <p>
                 Our team had the privilege of interacting with esteemed industry leaders and dignitaries, including:
               </p>
 
@@ -96,28 +100,28 @@ export default function BlogSection() {
 
               <p>
                 At <span style={{ color: "#003366", fontWeight: "bold" }}>Faven LP</span>, we remain committed to strengthening privacy, data protection, and regulatory compliance in Nigeria and across Africa. Participating in events like the <span style={{ color: "#003366" }}>NADPA Conference</span> allows us to stay at the forefront of conversations shaping the future of the digital economy.
-              </p>
+              </p> */}
             </div>
 
           </div>
-          <div className="grid grid-cols-2 md:h-[170vh] gap-4 flex-1 ">
-            <div className="col-span-2  rounded-2xl overflow-hidden">
+          <div className="grid grid-cols-2 md:h-[60vh] gap-4 flex-1 ">
+            {/* <div className="col-span-2  rounded-2xl overflow-hidden">
               <Image src={'/images/post1.jpg'} alt="#" height={300} width={900} className=""></Image>
+            </div> */}
+            <div className="bg-gray-100 rounded-2xl overflow-hidden">
+              <Image src={'/images/post3.jpg'} alt="#" height={100} width={800} className="w-full object-top object-cover h-full"></Image>
             </div>
             <div className="bg-gray-100 rounded-2xl overflow-hidden">
-              <Image src={'/images/post3.jpg'} alt="#" height={100} width={800} className="w-full object-cover h-full"></Image>
+              <Image src={'/images/post6.jpg'} alt="#" height={100} width={1000} className="w-full  object-cover h-full"></Image>
             </div>
-            <div className="bg-gray-100 rounded-2xl overflow-hidden">
-              <Image src={'/images/post6.jpg'} alt="#" height={100} width={1000} className="w-full object-cover h-full"></Image>
-            </div>
-            <div className="col-span-2  rounded-2xl overflow-hidden">
+            {/* <div className="col-span-2  rounded-2xl overflow-hidden">
               <Image src={'/images/post7.jpg'} alt="#" height={300} width={900} className=""></Image>
+            </div> */}
+            <div className="bg-gray-100 rounded-2xl overflow-hidden">
+              <Image src={'/images/post9.jpg'} alt="#" height={100} width={800} className="w-full object-top scale-150 object-cover h-full"></Image>
             </div>
             <div className="bg-gray-100 rounded-2xl overflow-hidden">
-              <Image src={'/images/post9.jpg'} alt="#" height={100} width={800} className="w-full object-cover h-full"></Image>
-            </div>
-            <div className="bg-gray-100 rounded-2xl overflow-hidden">
-              <Image src={'/images/post10.jpg'} alt="#" height={100} width={1000} className="w-full object-cover h-full"></Image>
+              <Image src={'/images/post10.jpg'} alt="#" height={100} width={1000} className="w-full object-cover scale-110 h-full"></Image>
             </div>
           </div>
         </div>

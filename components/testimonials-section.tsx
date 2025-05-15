@@ -1,12 +1,17 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+// import type { Swiper as SwiperType } from "swiper";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import SwiperCore from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
+
+
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const testimonials = [
   {
@@ -60,9 +65,26 @@ function TeamImage({ src, alt }: { src: string; alt: string }) {
 export default function TestimonialsSection() {
   const [expanded, setExpanded] = useState<number | null>(null);
 
+  const swiperRef = useRef<SwiperCore | null>(null);
+
   const toggleExpand = (index: number) => {
-    setExpanded((prev) => (prev === index ? null : index));
+    setExpanded((prev) => {
+      const isExpanding = prev !== index;
+
+      // Stop or start autoplay based on new state
+      if (swiperRef.current?.autoplay) {
+        if (isExpanding) {
+          swiperRef.current.autoplay.stop();
+        } else {
+          swiperRef.current.autoplay.start();
+        }
+      }
+
+      return isExpanding ? index : null;
+    });
   };
+
+
 
   return (
     <section className="relative py-20 transition-theme">
@@ -79,6 +101,9 @@ export default function TestimonialsSection() {
         <div className="relative max-w-6xl mx-auto">
           {/* Swiper Container */}
           <Swiper
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+            }}
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
@@ -110,8 +135,8 @@ export default function TestimonialsSection() {
                       {isExpanded
                         ? testimonial.quote
                         : testimonial.quote.length > previewLength
-                        ? testimonial.quote.slice(0, previewLength) + "..."
-                        : testimonial.quote}
+                          ? testimonial.quote.slice(0, previewLength) + "..."
+                          : testimonial.quote}
                       &quot;
                     </p>
 
@@ -188,7 +213,7 @@ export default function TestimonialsSection() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
 

@@ -1,87 +1,5 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Search, Tag, Calendar, User } from "lucide-react"
-import { Input } from "@/components/ui/input"
+import SwiperGallery from "@/components/swiperGallary"
 
-const blogPosts = [
-  {
-    id: "cloud-storage-contracts",
-    title: "5 Things To Understand Before Signing Cloud Storage Contracts",
-    excerpt:
-      "Uncover the critical fine print that could put your business at risk and how to ensure your data remains protected legally and technically when using cloud services.",
-    image: "/placeholder.svg?height=400&width=800",
-    author: "Alexandra Martin",
-    date: "March 15, 2023",
-    category: "Data Privacy",
-    tags: ["Cloud Computing", "Contracts", "Data Protection"],
-  },
-  {
-    id: "online-dispute-resolution",
-    title: "Adoption of Technology in B2B: A Case For Online Dispute Resolution",
-    excerpt:
-      "Explore how digital transformation is revolutionizing conflict resolution between businesses and creating more efficient paths to resolution without traditional litigation.",
-    image: "/placeholder.svg?height=400&width=800",
-    author: "Daniel Roberts",
-    date: "February 28, 2023",
-    category: "Dispute Resolution",
-    tags: ["B2B", "Legal Tech", "ODR"],
-  },
-  {
-    id: "negotiation-win-win",
-    title: "The Art of Negotiating a Savings Win-Win Solution",
-    excerpt:
-      "Learn practical techniques that can help both parties feel satisfied with the outcome while protecting your business interests throughout complex negotiations.",
-    image: "/placeholder.svg?height=400&width=800",
-    author: "Sophia Chen",
-    date: "January 12, 2023",
-    category: "Business Strategy",
-    tags: ["Negotiation", "Strategy", "Business Relations"],
-  },
-  {
-    id: "ai-legal-issues",
-    title: "Emerging Legal Issues in Artificial Intelligence Implementation",
-    excerpt:
-      "A comprehensive overview of the legal challenges businesses face when implementing AI solutions and strategies for addressing these concerns proactively.",
-    image: "/placeholder.svg?height=400&width=800",
-    author: "Evelyn Chambers",
-    date: "December 5, 2022",
-    category: "Technology Law",
-    tags: ["AI", "Compliance", "Innovation"],
-  },
-  {
-    id: "remote-work-policies",
-    title: "Crafting Remote Work Policies That Protect Your Business",
-    excerpt:
-      "Key legal considerations for businesses transitioning to remote or hybrid work models, including privacy, security, and employment law implications.",
-    image: "/placeholder.svg?height=400&width=800",
-    author: "Benjamin J. Richardson",
-    date: "November 18, 2022",
-    category: "Employment Law",
-    tags: ["Remote Work", "Policy", "Compliance"],
-  },
-  {
-    id: "intellectual-property-startups",
-    title: "Intellectual Property Essentials for Technology Startups",
-    excerpt:
-      "A guide to protecting your innovations from the early stages of your business, with practical steps for startups with limited legal budgets.",
-    image: "/placeholder.svg?height=400&width=800",
-    author: "Olivia Parker",
-    date: "October 30, 2022",
-    category: "Intellectual Property",
-    tags: ["Startups", "IP Protection", "Innovation"],
-  },
-]
-
-const categories = [
-  "All Categories",
-  "Data Privacy",
-  "Technology Law",
-  "Intellectual Property",
-  "Compliance",
-  "Dispute Resolution",
-  "Business Strategy",
-]
 
 export default function BlogPage() {
   return (
@@ -99,156 +17,64 @@ export default function BlogPage() {
       {/* Blog Content */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-4 gap-8">
+          <div className="gap-8">
             {/* Sidebar */}
-            <div className="lg:col-span-1 space-y-8">
-              {/* Search */}
-              <div className="rounded-lg border p-4">
-                <h3 className="font-bold text-primary mb-4">Search</h3>
-                <div className="relative">
-                  <Search className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-                  <Input placeholder="Search articles..." className="pl-10" />
+            <div className="flex w-full gap-12">
+              <div className="flex w-1/2 flex-col gap-4">
+                <h2 className="text-3xl font-bold text-primary">Blog</h2>
+                <h3 className="text-2xl font-semibold text-primary">
+                  Faven LP at NADPA Conference 2025
+                </h3>
+                <div className="space-y-4 text-base leading-relaxed">
+                  <p>
+                    Delegates from <span style={{ color: "#003366", fontWeight: "bold" }}>Faven LP</span> were honoured to participate in the <span style={{ color: "#003366", fontWeight: "bold" }}>2025 NADPA Conference</span>, held at the prestigious Transcorp Hilton, Abuja, from the <span style={{ color: "#003366" }}>6th to 8th of May, 2025</span>.
+                  </p>
+
+                  <p>
+                    The conference proved to be an enriching experience—offering invaluable insights, engaging conversations, and strategic networking with leading figures in the global digital and data protection space.
+                  </p>
+
+                  <p>
+                    Our team had the privilege of interacting with esteemed industry leaders and dignitaries, including:
+                  </p>
+
+                  <ul className="list-disc list-inside space-y-1">
+                    <li><span style={{ color: "#003366" }}>Dr. Vincent Olatunji</span>, National Commissioner/CEO, Nigeria Data Protection Commission (NDPC)</li>
+                    <li><span style={{ color: "#003366" }}>Immaculate Kassait</span>, Commissioner, Office of the Data Protection Commissioner (ODPC), Kenya</li>
+                    <li><span style={{ color: "#003366" }}>Derek Ho</span>, Deputy Chief Privacy Officer, AI & Data Responsibility, Mastercard</li>
+                    <li><span style={{ color: "#003366" }}>Susan</span>, Privacy Professional, Mastercard</li>
+                    <li><span style={{ color: "#003366" }}>Bojana Bellamy</span>, President, Centre for Information Policy Leadership (CIPL) and <span style={{ color: "#003366" }}>Mark Smith</span>, also delegate from CIPL</li>
+                    <li><span style={{ color: "#003366" }}>Adewale Obadare</span>, Founder and Chief Visionary Officer (CVO), Digital Encode Limited</li>
+                    <li><span style={{ color: "#003366" }}>Dr. Favour Femi-Oyewole</span>, Group Chief Information Security Officer, Access Bank | Forbes Best of Africa Outstanding Cybersecurity Leader | Forbes Technology Council Member</li>
+                  </ul>
+
+                  <p>
+                    Notably, <span style={{ color: "#003366", fontWeight: "bold" }}>CIPL</span> in collaboration with the <span style={{ color: "#003366", fontWeight: "bold" }}>Global System for Mobile Communication (GSMA)</span> hosted an official side event on <span style={{ color: "#003366" }}>&quot; Data Policy and Governance for AI: Fostering Responsible Innovation and Adoption.&quot;</span>
+                  </p>
+
+                  <p>
+                    Representing Faven LP were:
+                  </p>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li><span style={{ color: "#003366" }}>Ikionana Ezekiel</span>, Principal Partner</li>
+                    <li><span style={{ color: "#003366" }}>Oluwatoboloba Adewum</span>, Partner</li>
+                    <li><span style={{ color: "#003366" }}>Kosisochukwu</span>, IT Compliance and Startup Advisor</li>
+                    <li><span style={{ color: "#003366" }}>Prosper I. Akinlawon</span>, Media and Publicity Lead</li>
+                  </ul>
+
+                  <p>
+                    At <span style={{ color: "#003366", fontWeight: "bold" }}>Faven LP</span>, we remain committed to strengthening privacy, data protection, and regulatory compliance in Nigeria and across Africa. Participating in events like the <span style={{ color: "#003366" }}>NADPA Conference</span> allows us to stay at the forefront of conversations shaping the future of the digital economy.
+                  </p>
                 </div>
+                {/* Blog Posts */}
               </div>
 
-              {/* Categories */}
-              <div className="rounded-lg border p-4">
-                <h3 className="font-bold text-primary mb-4">Categories</h3>
-                <ul className="space-y-2">
-                  {categories.map((category, index) => (
-                    <li key={index}>
-                      <Link
-                        href={`/blog/category/${category.toLowerCase().replace(/\s+/g, "-")}`}
-                        className={`block py-1 hover:text-primary transition-colors ${
-                          index === 0 ? "text-primary font-medium" : "text-gray-700"
-                        }`}
-                      >
-                        {category}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Popular Posts */}
-              <div className="rounded-lg border p-4">
-                <h3 className="font-bold text-primary mb-4">Popular Posts</h3>
-                <ul className="space-y-4">
-                  {blogPosts.slice(0, 3).map((post) => (
-                    <li key={post.id} className="flex items-start space-x-3">
-                      <Image
-                        src={post.image || "/placeholder.svg"}
-                        alt={post.title}
-                        width={80}
-                        height={60}
-                        className="rounded w-20 h-16 object-cover"
-                      />
-                      <Link
-                        href={`/blog/${post.id}`}
-                        className="text-sm font-medium hover:text-primary transition-colors"
-                      >
-                        {post.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+              <div className="w-1/2 h-[80vh]">
+                <SwiperGallery />
               </div>
             </div>
 
-            {/* Blog Posts */}
-            <div className="lg:col-span-3">
-              <div className="grid md:grid-cols-2 gap-8">
-                {blogPosts.map((post) => (
-                  <div
-                    key={post.id}
-                    className="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
-                  >
-                    <Link href={`/blog/${post.id}`}>
-                      <Image
-                        src={post.image || "/placeholder.svg"}
-                        alt={post.title}
-                        width={800}
-                        height={400}
-                        className="w-full h-56 object-cover"
-                      />
-                    </Link>
-                    <div className="p-6">
-                      <div className="flex items-center space-x-4 text-sm text-gray-500 mb-3">
-                        <span className="flex items-center">
-                          <Calendar className="h-4 w-4 mr-1" />
-                          {post.date}
-                        </span>
-                        <span className="flex items-center">
-                          <User className="h-4 w-4 mr-1" />
-                          {post.author}
-                        </span>
-                      </div>
 
-                      <Link href={`/blog/${post.id}`}>
-                        <h2 className="text-xl font-bold mb-3 text-primary hover:text-primary/80 transition-colors">
-                          {post.title}
-                        </h2>
-                      </Link>
-
-                      <p className="text-gray-600 mb-4">{post.excerpt}</p>
-
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {post.tags.map((tag, i) => (
-                          <span
-                            key={i}
-                            className="inline-flex items-center text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded"
-                          >
-                            <Tag className="h-3 w-3 mr-1" />
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-
-                      <Link href={`/blog/${post.id}`}>
-                        <Button className="bg-primary hover:bg-white text-white">Read More</Button>
-                      </Link>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Pagination */}
-              <div className="mt-12 flex justify-center">
-                <nav className="inline-flex" aria-label="Pagination">
-                  <a
-                    href="#"
-                    className="inline-flex items-center justify-center rounded-l-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50"
-                  >
-                    Previous
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center justify-center border-t border-b border-gray-300 bg-white px-3 py-2 text-sm font-medium text-primary"
-                    aria-current="page"
-                  >
-                    1
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center justify-center border-t border-b border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50"
-                  >
-                    2
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center justify-center border-t border-b border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50"
-                  >
-                    3
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center justify-center rounded-r-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50"
-                  >
-                    Next
-                  </a>
-                </nav>
-              </div>
-            </div>
           </div>
         </div>
       </section>
