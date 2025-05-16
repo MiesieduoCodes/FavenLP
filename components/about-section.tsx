@@ -26,7 +26,7 @@ export default function AboutSection() {
 
               {/* <h3 className="text-4xl  lufga text-primary">Your case is in the right hands!</h3> */}
             </div>
-            <div className={`text-gray-800 space-y-4 ${isExpanded ? "pt-10":""}`}>
+            <div className={`text-gray-800 pt-10 space-y-4 ${isExpanded ? "pt-20" : ""}`}>
               <p>
                 At <span className="font-bold italic text-[#0a3d62]">FAVEN LP</span>, we understand the intersection of
                 <span className="font-bold italic text-[#0a3d62]"> technology, law, and business</span>.

@@ -54,11 +54,11 @@ export default function BlogSection() {
 
         <div className="flex w-full max-md:flex-col gap-12">
           <div className="flex md:w-1/2 w-full flex-col gap-4">
-            <h2 className="text-4xl font-bold text-primary">Blog</h2>
-            <h3 className="text-3xl font-semibold text-primary">
+            <h2 className="text-3xl font-bold text-primary">Blog</h2>
+            <h3 className="text-2xl font-semibold text-primary">
               Faven LP at NADPA Conference 2025
             </h3>
-            <div className="space-y-4 text-base md:text-2xl leading-relaxed">
+            <div className="space-y-4 text-base  leading-relaxed">
               <p>
                 Delegates from <span style={{ color: "#003366", fontWeight: "bold" }}>Faven LP</span> were honoured to participate in the <span style={{ color: "#003366", fontWeight: "bold" }}>2025 NADPA Conference</span>, held at the prestigious Transcorp Hilton, Abuja, from the <span style={{ color: "#003366" }}>6th to 8th of May, 2025</span>.
               </p>
