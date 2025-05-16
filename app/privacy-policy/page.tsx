@@ -150,7 +150,7 @@ const PrivacyPolicy = () => {
                         <br />
                         Phone number: 09068126885
                         <br />
-                        Email: info@favenlp.com
+                        Email: ikionanaezekiel@gmail.com
                     </p>
                 </Section>
             </div>
