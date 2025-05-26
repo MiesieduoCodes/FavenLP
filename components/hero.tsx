@@ -46,7 +46,7 @@ export default function Hero() {
 
           </h1>
           <p className="text-lg lufga md:text-xl mb-8 text-primary-foreground/80">
-            We bridge the Gap between law, business and technology - delivering practical legal guidance that drives result
+            We bridge the gap between law, business and technology - delivering practical legal guidance that drives result
           </p>
           <button onClick={() => handleNavigate(title)} className="border cursor-pointer hover:bg-[#9b7f3e] hover:text-white transition-all ease-in-out duration-200  border-[#9B7F4E] text-[#9B7F4E] rounded-full py-4 px-6 bg-white">
             Book a Consultation

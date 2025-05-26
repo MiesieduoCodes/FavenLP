@@ -15,12 +15,7 @@ export default function ContactSection() {
           {/* Left Column - Contact Information */}
           <div className="space-y-4">
             <h2 className="text-4xl font-bold tracking-tight">Contact Us</h2>
-            <p className="text-lg text-gray-300">
-              Feel free to contact us for any business, media, or personal inquiries:
-            </p>
-            <p>we operate virtually and a means for them to reach us tied to
-              <Link href={"mailto:ikionanaezekiel@gmail.com"} className="hover:text-blue-300"> ikionanaezekiel@gmail.com</Link>
-            </p>
+           
 
             <div className="space-y-4">
               <div className="w-full max-md:flex-col gap-6 flex md:gap-20">
