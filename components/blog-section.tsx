@@ -14,7 +14,7 @@ export default function BlogSection() {
             <h3 className="text-2xl font-semibold text-primary">
               Faven LP at NADPA Conference 2025
             </h3>
-            <div className="space-y-4 text-base  leading-relaxed">
+            <div className="flex flex-col text-base  leading-relaxed">
               <p>
                 Delegates from <span style={{ color: "#003366", fontWeight: "bold" }}>Faven LP</span> were honoured to participate in the <span style={{ color: "#003366", fontWeight: "bold" }}>2025 NADPA Conference</span>, held at the prestigious Transcorp Hilton, Abuja, from the <span style={{ color: "#003366" }}>6th to 8th of May, 2025</span>.
               </p>
@@ -23,7 +23,7 @@ export default function BlogSection() {
                 The conference proved to be an enriching experience—offering invaluable insights, engaging conversations, and strategic networking with leading figures in the global digital and data protection space.
               </p>
 
-              <Link href={"/blog"} className="bg-primary text-lg hover:border-primary border border-transparent ease-in-out transition-all duration-300 rounded-xl text-white px-6 py-3">
+              <Link href={"/blog"} className="bg-primary mt-8 w-fit text-lg hover:border-primary border border-transparent ease-in-out transition-all duration-300 rounded-xl text-white px-6 py-3">
                 Read more
               </Link>
 
@@ -58,12 +58,12 @@ export default function BlogSection() {
             <h3 className="text-2xl font-semibold text-primary capitalize">
               how to register as a data controller and data processor of major important In Nigeria
             </h3>
-            <div className="space-y-4 text-base  leading-relaxed">
+            <div className="flex flex-col text-base  leading-relaxed">
               <p>
                 An organization or individual becomes a Data Controller or Processor of Major Importance (DCPMI) under law when its/their processing activities pose potential risks to personal data of Nigerian citizens under its/their disposal and where such processing of personal data is of particular value or significance to the economy, society or security of Nigeria as determined by the Nigeria Data Protection Commission (“Commission”).
               </p>
 
-              <Link href={"/blog#dataController"} className="bg-primary text-lg hover:border-primary border border-transparent ease-in-out transition-all duration-300 rounded-xl text-white px-6 py-3">
+              <Link href={"/blog#dataController"} className="bg-primary mt-8 w-fit text-lg hover:border-primary border border-transparent ease-in-out transition-all duration-300 rounded-xl text-white px-6 py-3">
                 Read more
               </Link>
 
