@@ -8,6 +8,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .swiper-button-prev,.swiper-button-next{
 
 }

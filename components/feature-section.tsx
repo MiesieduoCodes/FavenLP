@@ -29,10 +29,13 @@ const features = [
 
 export default function FeatureSection() {
   return (
-    <section className="relative py-20 bg-red-500 cursor-pointer transition-theme">
+    <section className="relative py-20 cursor-pointer transition-theme">
       {/* Background Image with Opacity */}
       <div
-        className="absolute inset-0 bg-[url('/images/choose.jpg')] bg-cover bg-center before:absolute before:inset-0 before:bg-black/50"
+      style={{
+        backgroundPositionY: "-500px",
+      }}
+        className="absolute w-full inset-0 bg-[url('/images/teamMembers/presenting.jpg')] bg-cover bg-center before:absolute before:inset-0 before:bg-black/20"
       />
 
       <div className="relative container mx-auto px-4">
