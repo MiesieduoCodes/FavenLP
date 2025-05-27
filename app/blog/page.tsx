@@ -106,7 +106,7 @@ export default function BlogPage() {
             Privacy Compliance Series 1.2
           </h1>
           <p className="text-sm italic text-gray-500 mb-6">
-            Courtesy: Ikionana Ezekiel, Esq.
+            Courtesy: Ikionana Ezekiel, Kosisochukwu J Akonani, Hephzibah Olutona. 
           </p>
 
           <h2 className="text-2xl font-semibold text-yellow-600 mb-4">
