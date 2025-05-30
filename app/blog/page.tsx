@@ -3,6 +3,7 @@
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import SwiperGallery from "@/components/swiperGallary"
+import Link from 'next/link'
 
 
 export default function BlogPage() {
@@ -105,11 +106,18 @@ export default function BlogPage() {
           <h1 className="text-3xl font-bold text-gray-800 mb-4">
             Privacy Compliance Series 1.2
           </h1>
-          <p className="text-sm italic text-gray-500 mb-6">
-            Courtesy: Ikionana Ezekiel, Kosisochukwu J Akonani, Hephzibah Olutona. 
-          </p>
+          <div  className="text-sm flex gap-1 italic text-gray-500 mb-6">
+            <Link className=" underline hover:text-primary transition-all ease-in-out duration-300 " href={"https://www.linkedin.com/in/ikionana-ezekiel-"}>
+            Ikionana Ezekiel</Link>,
+            <Link className=" underline hover:text-primary transition-all ease-in-out duration-300 " href={"https://www.linkedin.com/in/akonanikosi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}>
+            Kosisochukwu J Akonani
+            </Link>, 
+             <Link className=" underline hover:text-primary transition-all ease-in-out duration-300 " href={"https://www.linkedin.com/in/hephzibah-olutona-aicmc-237aa5227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}>
+             Hephzibah Olutona.
+             </Link>
+          </div>
 
-          <h2 className="text-2xl font-semibold text-yellow-600 mb-4">
+          <h2 className="text-2xl  font-semibold text-yellow-600 mb-4">
             How to Register as a Data Controller and Data Processor of Major Importance in Nigeria
           </h2>
 
