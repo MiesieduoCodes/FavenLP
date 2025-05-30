@@ -106,7 +106,7 @@ export default function BlogPage() {
           <h1 className="text-3xl font-bold text-gray-800 mb-4">
             Privacy Compliance Series 1.2
           </h1>
-          <div  className="text-sm flex gap-1 italic text-gray-500 mb-6">
+          <div  className="text-sm flex flex-wrap gap-1 italic text-gray-500 mb-6">
             <Link className=" underline hover:text-primary transition-all ease-in-out duration-300 " href={"https://www.linkedin.com/in/ikionana-ezekiel-"}>
             Ikionana Ezekiel</Link>,
             <Link className=" underline hover:text-primary transition-all ease-in-out duration-300 " href={"https://www.linkedin.com/in/akonanikosi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}>
