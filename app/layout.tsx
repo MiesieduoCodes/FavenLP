@@ -5,8 +5,8 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Faven LP - Legal Technology Solutions",
-  description: "Achieving lasting technological solutions through legal compliance",
+  title: "Faven LP",
+  description: "",
   keywords: [
     "legal technology",
     "legal compliance",
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Faven LP", url: "https://favenlp.com" }],
   openGraph: {
-    title: "Faven LP - Legal Technology Solutions",
-    description: "Achieving lasting technological solutions through legal compliance",
+    title: "Faven LP",
+    description: "",
     url: "https://favenlp.com",
     siteName: "Faven LP",
     images: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         url: "https://favenlp.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Faven LP - Legal Technology Solutions",
+        alt: "Faven LP",
       },
     ],
     locale: "en_US",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Faven LP - Legal Technology Solutions",
-    description: "Achieving lasting technological solutions through legal compliance",
+    title: "Faven LP",
+    description: "",
     images: ["https://favenlp.com/og-image.png"],
   },
   metadataBase: new URL("https://favenlp.com"),
@@ -53,7 +53,7 @@ export default function RootLayout({
     name: "Faven LP",
     url: "https://favenlp.com",
     logo: "https://favenlp.com/logo.png",
-    description: "Achieving lasting technological solutions through legal compliance",
+    description: "",
   };
 
   return (
