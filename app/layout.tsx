@@ -67,6 +67,9 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
+        <title>
+          Faven LP
+        </title>
         <link
           rel="apple-touch-icon"
           href="/apple-icon?<generated>"
