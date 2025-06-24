@@ -76,7 +76,7 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
-
+<meta name="google-site-verification" content="8ZxYqH6wfojy62mJZHrTBO3X1J1aVPZQwdmYs6walGA" />
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
