@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import SwiperGallery from "@/components/swiperGallary"
 import Link from 'next/link'
+import DataProtectionArticle from '@/components/data-privacy'
 
 
 export default function BlogPage() {
@@ -374,6 +375,8 @@ export default function BlogPage() {
             </span>
           </p>
         </section>
+
+        <DataProtectionArticle/>
       </section>
     </>
 
