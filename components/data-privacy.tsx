@@ -1,6 +1,6 @@
 export default function DataProtectionArticle() {
   return (
-    <div className=" px-4 md:px-20 py-10 text-gray-800">
+    <div id="dataPrivacy" className=" px-4 md:px-20 py-10 text-gray-800">
       <h1 className="text-3xl font-bold text-left mb-8">
         Multichoice Fined ₦766,242,500 for Violating Nigeria&apos;s Data Protection Law: A Wake-Up Call for Private Companies
       </h1>

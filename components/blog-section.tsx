@@ -70,9 +70,34 @@ export default function BlogSection() {
             </div>
 
           </div>
-          <div className="flex md:h-[60vh] gap-4 flex-1 ">
+          <div className="flex md:h-[50vh] gap-4 flex-1 ">
             <div className="w-full h-full  rounded-2xl overflow-hidden">
               <Image src={'/images/data-collection.jpeg'} alt="#" height={300} width={900} className="w-full h-full"></Image>
+            </div>
+            
+          </div>
+        </div>
+
+        <div className="flex w-full md:flex-row pt-10 max-md:flex-col gap-12">
+          <div className="flex md:w-1/2 w-full flex-col gap-4">
+            <h3 className="text-2xl font-semibold text-primary capitalize">
+             NDPC Slams Multichoice with ₦766M Fine Over Data Privacy Violations
+            </h3>
+            <div className="flex flex-col text-base  leading-relaxed">
+              <p>
+                Multichoice Nigeria has been fined ₦766,242,500 by the Nigeria Data Protection Commission for breaching key data protection laws. From mishandling personal information to cross-border data transfers without consent, this case sets a precedent for how seriously data privacy is now being enforced in Nigeria. The article explores what went wrong, why it matters, and the lessons every company should learn.
+              </p>
+
+              <Link href={"/blog#dataPrivacy"} className="bg-primary mt-8 w-fit text-lg hover:border-primary border border-transparent ease-in-out transition-all duration-300 rounded-xl text-white px-6 py-3">
+                Read more
+              </Link>
+
+            </div>
+
+          </div>
+          <div className="flex md:h-[50vh] gap-4 flex-1 ">
+            <div className="w-full h-full  rounded-2xl overflow-hidden">
+              <Image src={'/images/data-privacy.jpeg'} alt="#" height={300} width={900} className="w-full h-full"></Image>
             </div>
             
           </div>
