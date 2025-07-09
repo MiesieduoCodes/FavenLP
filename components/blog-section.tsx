@@ -97,7 +97,7 @@ export default function BlogSection() {
           </div>
           <div className="flex md:h-[50vh] gap-4 flex-1 ">
             <div className="w-full h-full  rounded-2xl overflow-hidden">
-              <Image src={'/images/data-privacy.jpeg'} alt="#" height={300} width={900} className="w-full h-full"></Image>
+              <Image src={'/images/blog-news.jpeg'} alt="#" height={300} width={900} className="w-full h-full"></Image>
             </div>
             
           </div>

@@ -17,7 +17,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-background border-b transition-theme">
+    <header className="sticky top-0 z-500000 w-full bg-background border-b transition-theme">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
