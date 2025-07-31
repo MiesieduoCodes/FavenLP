@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import SwiperGallery from "@/components/swiperGallary"
 import Link from 'next/link'
 import DataProtectionArticle from '@/components/data-privacy'
+import DataSubjectAccessRequests from '@/components/data-structure'
 
 
 export default function BlogPage() {
@@ -377,6 +378,7 @@ export default function BlogPage() {
         </section>
 
         <DataProtectionArticle/>
+        <DataSubjectAccessRequests/>
       </section>
     </>
 
