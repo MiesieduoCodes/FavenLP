@@ -4,8 +4,8 @@ import React from "react";
 
 const NigeriaTaxAct2025: React.FC = () => {
   return (
-    <div className="p-6 max-w-4xl mx-auto text-gray-800 leading-7">
-      <h1 className="text-2xl font-bold mb-4">
+    <div id="nigerianTax" className="md:px-20 px-4 py-10 md:py-20 mx-auto text-gray-800 leading-7">
+      <h1 className="text-3xl font-bold mb-4">
         What the Nigeria Tax Act, 2025 Means for Technological Companies in Nigeria: 7 Things Every Startup Founder Needs to Know.
       </h1>
 

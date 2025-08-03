@@ -74,14 +74,14 @@ export default function BlogSection() {
             <div className="w-full h-full  rounded-2xl overflow-hidden">
               <Image src={'/images/data-collection.jpeg'} alt="#" height={300} width={900} className="w-full h-full"></Image>
             </div>
-            
+
           </div>
         </div>
 
         <div className="flex w-full md:flex-row pt-10 max-md:flex-col gap-12">
           <div className="flex md:w-1/2 w-full flex-col gap-4">
             <h3 className="text-2xl font-semibold text-primary capitalize">
-             NDPC Slams Multichoice with ₦766M Fine Over Data Privacy Violations
+              NDPC Slams Multichoice with ₦766M Fine Over Data Privacy Violations
             </h3>
             <div className="flex flex-col text-base  leading-relaxed">
               <p>
@@ -99,7 +99,59 @@ export default function BlogSection() {
             <div className="w-full h-full  rounded-2xl overflow-hidden">
               <Image src={'/images/blog-news.jpeg'} alt="#" height={300} width={900} className="w-full h-full"></Image>
             </div>
-            
+
+          </div>
+        </div>
+
+        <div className="flex w-full md:flex-row-reverse pt-10 max-md:flex-col gap-12">
+          <div className="flex md:w-1/2 w-full flex-col gap-4">
+            <h3 className="text-2xl font-semibold text-primary capitalize">
+              DATA SUBJECT ACCESS REQUESTS (DSARS): BEST PRACTICES FOR MEETING LEGAL REQUIREMENTS
+            </h3>
+            <div className="flex flex-col text-base  leading-relaxed">
+              <p>
+                A Data Subject Access Request (DSAR) is a request directed to the organization by a
+                data subject (individual), granting the data subject right to access information
+                about his/her personal data the organization is processing.
+              </p>
+
+              <Link href={"/blog#dataSubject"} className="bg-primary mt-8 w-fit text-lg hover:border-primary border border-transparent ease-in-out transition-all duration-300 rounded-xl text-white px-6 py-3">
+                Read more
+              </Link>
+
+            </div>
+
+          </div>
+          <div className="flex md:h-[50vh] gap-4 flex-1 ">
+            <div className="w-full h-full  rounded-2xl overflow-hidden">
+              <Image src={'/images/data-subject.jpeg'} alt="#" height={300} width={900} className="w-full h-full"></Image>
+            </div>
+
+          </div>
+        </div>
+
+        <div className="flex w-full md:flex-row pt-10 max-md:flex-col gap-12">
+          <div className="flex md:w-1/2 w-full flex-col gap-4">
+            <h3 className="text-2xl font-semibold text-primary capitalize">
+              What the Nigeria Tax Act, 2025 Means for Technological Companies in Nigeria: 7 Things Every Startup Founder Needs to Know.
+            </h3>
+            <div className="flex flex-col text-base  leading-relaxed">
+              <p>
+                The Nigeria Tax Act, 2025 is a major reform in Nigeria&apos;s tax system. It brings together and replaces several older tax laws, such as the Companies Income Tax Act, Value Added Tax Act, and Capital Gains Tax Act.
+              </p>
+
+              <Link href={"/blog#nigerianTax"} className="bg-primary mt-8 w-fit text-lg hover:border-primary border border-transparent ease-in-out transition-all duration-300 rounded-xl text-white px-6 py-3">
+                Read more
+              </Link>
+
+            </div>
+
+          </div>
+          <div className="flex md:h-[50vh] gap-4 flex-1 ">
+            <div className="w-full h-full  rounded-2xl overflow-hidden">
+              <Image src={'/images/nigerian-tax.jpeg'} alt="#" height={300} width={900} className="w-full h-full"></Image>
+            </div>
+
           </div>
         </div>
       </div>

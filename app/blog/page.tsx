@@ -6,6 +6,7 @@ import SwiperGallery from "@/components/swiperGallary"
 import Link from 'next/link'
 import DataProtectionArticle from '@/components/data-privacy'
 import DataSubjectAccessRequests from '@/components/data-structure'
+import NigeriaTaxAct2025 from '@/components/nigeriantax'
 
 
 export default function BlogPage() {
@@ -379,6 +380,7 @@ export default function BlogPage() {
 
         <DataProtectionArticle/>
         <DataSubjectAccessRequests/>
+        <NigeriaTaxAct2025/>
       </section>
     </>
 
