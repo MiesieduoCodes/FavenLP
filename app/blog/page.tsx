@@ -7,6 +7,7 @@ import Link from 'next/link'
 import DataProtectionArticle from '@/components/data-privacy'
 import DataSubjectAccessRequests from '@/components/data-structure'
 import NigeriaTaxAct2025 from '@/components/nigeriantax'
+import BootcampPopup from '@/components/bootcamp-reg-popup'
 
 
 export default function BlogPage() {
@@ -381,6 +382,7 @@ export default function BlogPage() {
         <DataProtectionArticle/>
         <DataSubjectAccessRequests/>
         <NigeriaTaxAct2025/>
+        <BootcampPopup/>
       </section>
     </>
 
