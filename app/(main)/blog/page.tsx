@@ -95,7 +95,7 @@ export default function BlogPage() {
                     {/* Blog Posts */}
                   </div>
 
-                  <div className="md:w-1/2 w-full md:h-[80vh]">
+                  <div className="md:w-1/2 rounded-2xl overflow-hidden w-full md:h-[80vh]">
                     <SwiperGallery />
                   </div>
                 </div>

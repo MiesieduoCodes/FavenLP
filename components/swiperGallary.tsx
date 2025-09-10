@@ -41,11 +41,11 @@ export default function SwiperGallery() {
           loop
           spaceBetween={20}
           slidesPerView={1}
-          className="h-full rounded-2xl"
+          className="h-full"
         >
           {images.map((src, index) => (
             <SwiperSlide key={index}>
-              <div className="rounded-2xl overflow-hidden bg-gray-100">
+              <div className=" overflow-hidden bg-gray-100">
                 <Image
                   src={src}
                   alt={`Slide ${index + 1}`}

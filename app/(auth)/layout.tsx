@@ -1,8 +1,7 @@
 import type React from "react";
 import type { Metadata } from "next";
-import "./globals.css";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+import "../../app/globals.css"
+
 
 export const metadata: Metadata = {
   title: "Faven LP",
@@ -76,16 +75,16 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
-<meta name="google-site-verification" content="8ZxYqH6wfojy62mJZHrTBO3X1J1aVPZQwdmYs6walGA" />
+        <meta name="google-site-verification" content="8ZxYqH6wfojy62mJZHrTBO3X1J1aVPZQwdmYs6walGA" />
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
