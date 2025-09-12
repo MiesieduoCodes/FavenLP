@@ -42,11 +42,11 @@ export default function Login() {
 
     return (
         <>
-            <section className="bg-gray-200 justify-between flex w-full h-screen">
-                <section className="md:w-1/2 h-full overflow-hidden rounded-r-[10rem] ">
+            <section className="bg-gray-200 justify-between flex max-md:flex-col max-md:gap-8 w-full h-screen">
+                <section className="md:w-1/2 max-md:hidden md:h-full h-[40%] overflow-hidden md:rounded-r-[10rem] ">
                     <SwiperGallery />
                 </section>
-                <section className="md:w-1/2 items-center justify-center flex">
+                <section className="md:w-1/2 max-md:flex-1 items-center justify-center flex">
                     <div className="flex flex-col gap-8 md:w-lg">
                         <h1 className="text-3xl font-semibold">Welcome Back!</h1>
                         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
