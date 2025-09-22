@@ -4,7 +4,7 @@ import React from "react";
 
 const DataSubjectAccessRequests: React.FC = () => {
   return (
-    <div id="dataStructure" className="p-4 md:px-20 md:py-20 mx-auto text-gray-800 leading-7">
+    <div id="dataSubject" className="p-4 md:px-20 md:py-20 mx-auto text-gray-800 leading-7">
       <h1 className="text-2xl font-bold mb-4">
         DATA SUBJECT ACCESS REQUESTS (DSARS): BEST PRACTICES FOR MEETING LEGAL REQUIREMENTS
       </h1>
