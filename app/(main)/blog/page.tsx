@@ -15,7 +15,7 @@ const componentMap: Record<string, React.ReactNode> = {
   '#dataPrivacy': <DataProtectionArticle />,
   '#dataStructure': <DataSubjectAccessRequests />,
   '#nigerianTax': <NigeriaTaxAct2025 />,
-  '#bootcamp': <BootcampPopup />,
+  // '#bootcamp': <BootcampPopup />,
 }
 
 export default function BlogPage() {
@@ -47,6 +47,7 @@ export default function BlogPage() {
       <div className="container mx-auto px-4">
         {activeComponent || <p className="text-center text-lg">Select a topic from the menu.</p>}
       </div>
+      <BootcampPopup />
     </section>
   )
 }
