@@ -91,7 +91,7 @@ export default function BlogSection() {
   return (
     <section className="py-20 bg-background transition-theme">
       <div className="flex w-full items-center py-10 justify-center text-center">
-        <h2 className="text-3xl font-bold text-primary ">Blog</h2>
+        <h2 className="text-4xl font-bold text-primary ">Blog</h2>
       </div>
 
       <div className="container grid grid-cols-1 md:grid-cols-3 items-start  gap-16 mx-auto px-4">
