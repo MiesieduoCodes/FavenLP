@@ -90,10 +90,11 @@ const blogPosts = [
 export default function BlogSection() {
   return (
     <section className="py-20 bg-background transition-theme">
+      <div className="flex w-full items-center py-10 justify-center text-center">
+        <h2 className="text-3xl font-bold text-primary ">Blog</h2>
+      </div>
 
-      <h2 className="text-3xl font-bold text-primary my-10 mx-auto">Blog</h2>
-
-      <div className="container grid grid-cols-3 items-start  gap-16 mx-auto px-4">
+      <div className="container grid grid-cols-1 md:grid-cols-3 items-start  gap-16 mx-auto px-4">
         {blogPosts.map((post, index) => (
           <div
             key={index}
