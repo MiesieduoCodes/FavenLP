@@ -63,7 +63,7 @@ export default function TeamSection() {
               </div>
               <div className="flex flex-1 items-center justify-center text-center p-4" style={{ background: 'rgba(201, 191, 172, 1)' }}>
                 <div>
-                  <h3 className="font-bold group-hover:text-primary/50 transition-all ease-in-out duration-300 md:text-xl text-lg text-primary">{member.name}</h3>
+                  <h3 className="font-bold group-hover:text-primary/50 transition-all ease-in-out duration-300 md:text-xl text-lg capitalize text-primary">{member.name}</h3>
                   <p className="text-blue-950 text-sm">{member.role}</p>
                 </div>
                 {/* <div className="flex justify-center items-center">

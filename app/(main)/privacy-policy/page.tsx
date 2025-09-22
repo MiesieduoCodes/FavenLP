@@ -56,7 +56,7 @@ const PrivacyPolicy = () => {
                 <Section title="Who We Are">
                     <p>
                         We, Faven LP specializing in data protection and privacy compliance,
-                        corporate governance, Intellectual property, Media & technology law. We are committed to protecting your personal data
+                        corporate governance, intellectual property, media & technology law. We are committed to protecting your personal data
                         in compliance with applicable data protection laws. When we collect, use, and process personal data, we are governed
                         by the provisions of the Nigeria Data Protection Act, 2023. As a &quot;controller&quot; of personal information under this law, we bear
                         primary responsibility for the data. This means we are the legal entity that, alone or in collaboration with others, determines
