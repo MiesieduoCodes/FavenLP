@@ -98,7 +98,7 @@ export default function BlogSection() {
         {blogPosts.map((post, index) => (
           <div
             key={index}
-            className={`flex flex-1 flex-col-reverse max-md:flex-col gap-12`}
+            className={`flex flex-1 flex-col-reverse gap-12`}
           >
             {/* Text Section */}
             <div className="flex w-full flex-col gap-4">
